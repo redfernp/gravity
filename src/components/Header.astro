@@ -11,7 +11,7 @@ const navItems = [
 const currentPath = Astro.url.pathname;
 ---
 
-<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-gravity-bg/80 backdrop-blur-md border-b border-zinc-800/40 transition-all duration-300">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" data-transparent>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
 
@@ -80,15 +80,32 @@ const currentPath = Astro.url.pathname;
 
   btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
 
-  // Opaque on scroll
-  window.addEventListener('scroll', () => {
+  // Check if we're on the homepage
+  const isHome = window.location.pathname === '/';
+
+  function updateHeader() {
     if (!header) return;
     if (window.scrollY > 60) {
+      // Scrolled — always solid
       header.style.backgroundColor = 'rgba(8,12,20,0.97)';
-      header.style.borderBottomColor = 'rgba(39,39,42,0.8)';
+      header.style.borderBottom = '1px solid rgba(39,39,42,0.8)';
+      header.style.backdropFilter = 'blur(12px)';
+      header.style.webkitBackdropFilter = 'blur(12px)';
+    } else if (isHome) {
+      // Top of homepage — fully transparent
+      header.style.backgroundColor = 'transparent';
+      header.style.borderBottom = '1px solid transparent';
+      header.style.backdropFilter = 'none';
+      header.style.webkitBackdropFilter = 'none';
     } else {
+      // Top of other pages — semi-transparent
       header.style.backgroundColor = 'rgba(8,12,20,0.8)';
-      header.style.borderBottomColor = 'rgba(39,39,42,0.4)';
+      header.style.borderBottom = '1px solid rgba(39,39,42,0.4)';
+      header.style.backdropFilter = 'blur(12px)';
+      header.style.webkitBackdropFilter = 'blur(12px)';
     }
-  }, { passive: true });
+  }
+
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
 </script>
