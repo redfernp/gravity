@@ -49,7 +49,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
 >
 
   <!-- Hero -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-x-hidden bg-gravity-bg pb-24">
+  <section class="relative min-h-screen flex items-center justify-center overflow-x-hidden bg-gravity-bg pb-20">
     <!-- Background image -->
     <div class="absolute inset-0">
       <img
@@ -69,20 +69,18 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
     <div class="absolute left-0 right-0 h-px bg-gravity opacity-10 pointer-events-none" style="animation: scanDown 6s linear 1.5s infinite; top: 0;"></div>
 
     <div class="relative z-10 text-center px-4 max-w-7xl mx-auto mt-16">
-      <div class="mb-4 hero-label">
+      <div class="mb-1 hero-label">
         <span class="section-label">Every Vertical. Every Discipline.</span>
       </div>
-      <div class="overflow-visible">
-        <h1 class="hero-wordmark font-display font-black text-white uppercase tracking-tight overflow-visible"
-            style="font-size: clamp(4.5rem, 22vw, 18rem); line-height: 1.1;">
-          GRAVITY
-        </h1>
-      </div>
-      <p class="font-display font-bold text-zinc-300 uppercase tracking-[0.4em] -mt-2 mb-0"
+      <h1 class="hero-wordmark font-display font-black text-white uppercase tracking-tight"
+          style="font-size: clamp(4.5rem, 22vw, 18rem); line-height: 1; padding-bottom: 0.12em; margin-bottom: -0.08em;">
+        GRAVITY
+      </h1>
+      <p class="font-display font-bold text-zinc-300 uppercase tracking-[0.4em] mb-0"
          style="font-size: clamp(0.75rem, 3vw, 1.8rem);">
         Snowsports
       </p>
-      <p class="hero-subtitle text-zinc-300 mt-6 mb-10 max-w-2xl mx-auto leading-relaxed"
+      <p class="hero-subtitle text-zinc-300 mt-5 mb-8 max-w-2xl mx-auto leading-relaxed"
          style="font-size: clamp(1rem, 2vw, 1.25rem);">
         Honest gear reviews. Real competition coverage. The scenes nobody else bothers with.
       </p>
@@ -92,9 +90,9 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
       </div>
     </div>
 
-    <div class="hero-scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-      <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">Scroll</span>
-      <div class="w-px h-10 bg-gradient-to-b from-zinc-400 to-transparent"></div>
+    <div class="hero-scroll-hint absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
+      <span class="text-zinc-500 text-[0.6rem] uppercase tracking-widest font-display">Scroll</span>
+      <div class="w-px h-6 bg-gradient-to-b from-zinc-400 to-transparent"></div>
     </div>
   </section>
 
