@@ -1,0 +1,73 @@
+---
+interface Props {
+  name: string;
+  tagline: string;
+  slug: string;
+  category: string;
+  pricePoint: string;
+  heroImage?: string;
+  featured?: boolean;
+}
+
+const {
+  name,
+  tagline,
+  slug,
+  category,
+  pricePoint,
+  heroImage,
+  featured = false,
+} = Astro.props;
+
+const priceLabels: Record<string, string> = {
+  'dtc-value': 'Best Value DTC',
+  'mid': 'Mid Range',
+  'premium': 'Premium',
+  'luxury': 'Luxury',
+};
+
+const priceColors: Record<string, string> = {
+  'dtc-value': 'text-gravity border-gravity',
+  'mid': 'text-blue-400 border-blue-400',
+  'premium': 'text-orange-400 border-orange-400',
+  'luxury': 'text-purple-400 border-purple-400',
+};
+---
+
+<a
+  href={`/brand-spotlights/${slug}`}
+  class="group relative block bg-gravity-card border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-all duration-300"
+>
+  <!-- Hero image or gradient -->
+  <div class="aspect-[3/2] overflow-hidden relative">
+    {heroImage ? (
+      <img
+        src={heroImage}
+        alt={name}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        loading="lazy"
+      />
+    ) : (
+      <div class="w-full h-full bg-gradient-to-br from-zinc-800 to-gravity-bg flex items-center justify-center">
+        <span class="font-display font-black text-5xl text-zinc-700 uppercase tracking-tight group-hover:text-zinc-600 transition-colors">
+          {name.slice(0, 2).toUpperCase()}
+        </span>
+      </div>
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-gravity-card to-transparent opacity-60"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="p-5">
+    <div class="flex items-start justify-between gap-3 mb-2">
+      <h3 class="font-display font-black text-2xl text-white uppercase group-hover:text-gravity transition-colors">
+        {name}
+      </h3>
+      <span class={`text-xs font-bold uppercase tracking-wider border px-2 py-0.5 shrink-0 ${priceColors[pricePoint] || 'text-zinc-400 border-zinc-700'}`}>
+        {priceLabels[pricePoint] || pricePoint}
+      </span>
+    </div>
+    <p class="text-zinc-400 text-sm leading-relaxed mb-3">{tagline}</p>
+    <span class="text-xs text-zinc-600 uppercase tracking-widest">{category}</span>
+  </div>
+</a>

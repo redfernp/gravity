@@ -1,0 +1,324 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import BrandCard from '../components/BrandCard.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+
+const allCompete = await getCollection('compete');
+const allGear = await getCollection('gear-lab');
+const allShred = await getCollection('shred');
+const allBrands = await getCollection('brand-spotlights');
+const allCulture = await getCollection('culture');
+const allDestinations = await getCollection('destinations');
+
+const latestCompete = allCompete
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 4);
+
+const latestGear = allGear
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+
+const latestShred = allShred
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+
+const featuredBrands = allBrands
+  .filter(b => b.data.featured)
+  .slice(0, 4);
+
+const fallbackBrands = featuredBrands.length < 4
+  ? allBrands.slice(0, 4)
+  : featuredBrands;
+
+const latestCulture = [
+  ...allCulture.map(a => ({ ...a, _col: 'culture' as const })),
+  ...allDestinations.map(a => ({ ...a, _col: 'destinations' as const })),
+]
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+
+const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
+---
+
+<BaseLayout
+  title="Gravity Snowsports — Every Vertical. Every Discipline. No Limits."
+  description="UK extreme snow sports media. X Games, Freeride World Tour, underground UK scenes, splitboarding, ski touring, and the best gear reviews. No filler."
+>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gravity-bg noise-overlay grain-anim grid-overlay">
+    <!-- Deep atmosphere -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-gravity-bg to-gravity-bg"></div>
+    <!-- Lime radial glow -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(200,255,0,0.07) 0%, transparent 65%);"></div>
+    <!-- Warm hot-spot bottom -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 40% 30% at 80% 100%, rgba(255,61,0,0.04) 0%, transparent 60%);"></div>
+    <!-- Animated scan line -->
+    <div class="absolute left-0 right-0 h-px bg-gravity opacity-10 pointer-events-none" style="animation: scanDown 6s linear 1.5s infinite; top: 0;"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-7xl mx-auto">
+      <div class="mb-6 hero-label">
+        <span class="section-label">Every Vertical. Every Discipline.</span>
+      </div>
+      <h1 class="hero-wordmark font-display font-black text-white uppercase leading-none tracking-tight"
+          style="font-size: clamp(4.5rem, 22vw, 18rem); line-height: 0.9;">
+        GRAVITY
+      </h1>
+      <p class="hero-subtitle text-zinc-400 mt-6 mb-10 max-w-2xl mx-auto leading-relaxed"
+         style="font-size: clamp(1rem, 2vw, 1.25rem);">
+        Snow sports media for riders who are done with beginner guides and press-release gear reviews. Honest kit reviews, real competition coverage, and the underground scenes nobody else bothers with.
+      </p>
+      <div class="hero-ctas flex items-center justify-center gap-4 flex-wrap">
+        <a href="/compete" class="btn-primary">Who's Winning Right Now</a>
+        <a href="/gear-lab" class="btn-outline">Find Your Next Kit</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <span class="text-zinc-700 text-xs uppercase tracking-widest font-display">Scroll</span>
+      <div class="w-px h-10 bg-gradient-to-b from-zinc-600 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- Problem + Empathy Strip (StoryBrand: Problem) -->
+  <section class="relative bg-gravity-card border-t border-b border-zinc-800 py-14 px-4">
+    <div class="max-w-5xl mx-auto text-center reveal-on-scroll">
+      <p class="text-zinc-300 text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
+        Still reading the same five resort reviews? Still buying gear based on Instagram ads?
+        <span class="text-white font-semibold">Most UK snow media treats you like a tourist.</span>
+        We know you are not one.
+      </p>
+      <!-- Authority bar -->
+      <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        <div class="flex items-center gap-2">
+          <span class="text-gravity font-display font-black text-2xl">24+</span>
+          <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">Gear Reviews</span>
+        </div>
+        <div class="w-px h-6 bg-zinc-700 hidden sm:block"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-gravity font-display font-black text-2xl">15</span>
+          <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">Brand Partners</span>
+        </div>
+        <div class="w-px h-6 bg-zinc-700 hidden sm:block"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-gravity font-display font-black text-2xl">6</span>
+          <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">Disciplines Covered</span>
+        </div>
+        <div class="w-px h-6 bg-zinc-700 hidden sm:block"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">X Games to BUSC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compete Section -->
+  {latestCompete.length > 0 && (
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <SectionHeader
+        label="Competition"
+        title="Compete"
+        description="X Games. Freeride World Tour. Underground UK. The races and riders that define the sport."
+        cta={{ label: 'All competition coverage', href: '/compete' }}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {latestCompete.map((article, i) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            slug={article.slug}
+            collection="compete"
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+            image={article.data.image}
+            author={article.data.author}
+            featured={i === 0}
+            size={i === 0 ? 'large' : 'default'}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent"></div>
+  </div>
+
+  <!-- Gear Lab Section -->
+  {latestGear.length > 0 && (
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <SectionHeader
+        label="Reviews"
+        title="Gear Lab"
+        description="Independent, opinionated kit reviews. We test it. We rate it. We tell you exactly what we think."
+        cta={{ label: 'All gear reviews', href: '/gear-lab' }}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {latestGear.map(article => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            slug={article.slug}
+            collection="gear-lab"
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+            image={article.data.image}
+            author={article.data.author}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- The Plan (StoryBrand: Plan) -->
+  <section class="bg-gravity-bg py-16 px-4 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10 reveal-on-scroll">
+        <span class="section-label block mb-3">How to Use Gravity</span>
+        <h2 class="font-display font-black text-3xl md:text-4xl text-white uppercase">Your Pathway</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-on-scroll">
+        <a href="/gear-lab" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+          <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">01</span>
+          <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Gear Lab</h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">Find kit that performs. Honest reviews, DTC value picks, and the brands worth your money.</p>
+        </a>
+        <a href="/compete" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+          <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">02</span>
+          <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Compete</h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">Follow the riders. X Games. FWT. The UK underground and grassroots scenes nobody else covers.</p>
+        </a>
+        <a href="/destinations" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+          <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">03</span>
+          <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Destinations</h3>
+          <p class="text-zinc-500 text-sm leading-relaxed">Plan the trip. La Grave. Hokkaido. Lyngen. The mountains worth chasing this season.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Spotlights -->
+  {fallbackBrands.length > 0 && (
+    <section class="bg-gravity-card border-t border-b border-zinc-800 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeader
+          label="Partners"
+          title="Brand Spotlights"
+          description="The brands we ride with, test, and genuinely rate. From DTC value champions to technical heavyweights."
+          cta={{ label: 'All brand spotlights', href: '/brand-spotlights' }}
+        />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {fallbackBrands.map(brand => (
+            <BrandCard
+              name={brand.data.name}
+              tagline={brand.data.tagline}
+              slug={brand.slug}
+              category={brand.data.category}
+              pricePoint={brand.data.pricePoint}
+              heroImage={brand.data.heroImage}
+              featured={brand.data.featured}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Shred + Culture split -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+      <!-- Shred -->
+      {latestShred.length > 0 && (
+        <div>
+          <SectionHeader
+            label="Disciplines"
+            title="Shred"
+            description="Freeriding, park, splitboarding, ski touring. Every discipline treated with the respect it deserves."
+            cta={{ label: 'All shred content', href: '/shred' }}
+          />
+          <div class="flex flex-col gap-4">
+            {latestShred.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                slug={article.slug}
+                collection="shred"
+                pubDate={article.data.pubDate}
+                category={article.data.category}
+                image={article.data.image}
+                author={article.data.author}
+                size="small"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Culture + Destinations -->
+      {latestCulture.length > 0 && (
+        <div>
+          <SectionHeader
+            label="Beyond the Run"
+            title="Culture"
+            description="Film, photography, interviews, and the stories behind the sport. Plus destination guides for the mountains worth chasing."
+            cta={{ label: 'Culture and destinations', href: '/culture' }}
+          />
+          <div class="flex flex-col gap-4">
+            {latestCulture.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                slug={article.slug}
+                collection={article._col}
+                pubDate={article.data.pubDate}
+                category={article.data.category}
+                image={article.data.image}
+                author={article.data.author}
+                size="small"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Success Vision + Newsletter (StoryBrand: Success + CTA) -->
+  <section class="relative overflow-hidden bg-gravity-card border-t border-zinc-800 py-24 px-4">
+    <div class="absolute inset-0 grid-overlay opacity-30"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 50% 40% at 50% 100%, rgba(200,255,0,0.04) 0%, transparent 70%);"></div>
+    <div class="relative z-10 max-w-3xl mx-auto text-center reveal-on-scroll">
+
+      <!-- Success vision -->
+      <span class="section-label block mb-4">What You Get</span>
+      <h2 class="font-display font-black text-4xl md:text-6xl text-white uppercase leading-none mb-8">
+        Know the Riders Before They Blow Up<span class="text-gravity">.</span>
+        Own Kit That Actually Performs<span class="text-gravity">.</span>
+        Ski Lines Your Mates Haven't Heard Of<span class="text-gravity">.</span>
+      </h2>
+
+      <!-- Newsletter CTA -->
+      <p class="text-zinc-400 leading-relaxed mb-8 max-w-xl mx-auto">
+        Get the weekly drop: gear picks, competition highlights, and the UK underground, straight to your inbox. No spam, no fluff, just the good stuff.
+      </p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8" onsubmit="event.preventDefault();">
+        <input
+          type="email"
+          placeholder="your@email.com"
+          class="flex-1 bg-gravity-bg border border-zinc-700 text-white px-4 py-3 text-sm focus:outline-none focus:border-gravity placeholder:text-zinc-600 font-sans"
+        />
+        <button type="submit" class="btn-primary whitespace-nowrap">Get the Drop</button>
+      </form>
+
+      <!-- Secondary CTA -->
+      <a href="/about" class="text-zinc-500 text-xs font-bold uppercase tracking-widest hover:text-gravity transition-colors font-display">
+        Meet the Team Behind This →
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

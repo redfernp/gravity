@@ -1,0 +1,135 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const brands = await getCollection('brand-spotlights');
+  return brands.map(brand => ({
+    params: { slug: brand.slug },
+    props: { brand },
+  }));
+}
+
+const { brand } = Astro.props;
+const { Content } = await brand.render();
+
+const priceLabels: Record<string, string> = {
+  'dtc-value': 'Best Value DTC',
+  'mid': 'Mid Range',
+  'premium': 'Premium',
+  'luxury': 'Luxury',
+};
+---
+
+<BaseLayout
+  title={`${brand.data.name} Brand Spotlight | Gravity Snowsports`}
+  description={brand.data.description}
+  image={brand.data.heroImage}
+>
+  <!-- Brand Hero -->
+  <section class="relative overflow-hidden min-h-[50vh] flex items-end">
+    {brand.data.heroImage ? (
+      <img
+        src={brand.data.heroImage}
+        alt={brand.data.name}
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+    ) : (
+      <div class="absolute inset-0 bg-gradient-to-br from-zinc-800 to-gravity-bg"></div>
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-gravity-bg via-gravity-bg/70 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <span class="gravity-badge">{priceLabels[brand.data.pricePoint] || brand.data.pricePoint}</span>
+        <span class="text-zinc-400 text-xs uppercase tracking-widest">{brand.data.category}</span>
+        {brand.data.origin && (
+          <span class="text-zinc-500 text-xs uppercase tracking-widest">{brand.data.origin}</span>
+        )}
+      </div>
+      <h1 class="font-display font-black text-6xl md:text-8xl text-white uppercase leading-none">
+        {brand.data.name}
+      </h1>
+      <p class="text-zinc-300 text-xl mt-4 max-w-2xl">{brand.data.tagline}</p>
+    </div>
+  </section>
+
+  <!-- Brand meta bar -->
+  <section class="border-b border-zinc-800 py-4 px-4 bg-gravity-card">
+    <div class="max-w-7xl mx-auto flex flex-wrap gap-8 text-sm">
+      {brand.data.founded && (
+        <div>
+          <span class="text-zinc-600 text-xs uppercase tracking-widest block">Founded</span>
+          <span class="text-zinc-200 font-medium">{brand.data.founded}</span>
+        </div>
+      )}
+      {brand.data.origin && (
+        <div>
+          <span class="text-zinc-600 text-xs uppercase tracking-widest block">Origin</span>
+          <span class="text-zinc-200 font-medium">{brand.data.origin}</span>
+        </div>
+      )}
+      {brand.data.athleteRoster.length > 0 && (
+        <div>
+          <span class="text-zinc-600 text-xs uppercase tracking-widest block mb-1">Athletes</span>
+          <div class="flex flex-wrap gap-2">
+            {brand.data.athleteRoster.map(athlete => (
+              <span class="text-xs text-zinc-300 border border-zinc-700 px-2 py-0.5">{athlete}</span>
+            ))}
+          </div>
+        </div>
+      )}
+      {brand.data.affiliateNetwork && (
+        <div>
+          <span class="text-zinc-600 text-xs uppercase tracking-widest block">Buy Via</span>
+          <span class="text-zinc-200 font-medium">{brand.data.affiliateNetwork}</span>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Content -->
+  <article class="px-4 py-16">
+    <div class="max-w-4xl mx-auto prose prose-lg leading-relaxed">
+      <Content />
+    </div>
+  </article>
+
+  <!-- Key Products -->
+  {brand.data.keyProducts.length > 0 && (
+    <section class="bg-gravity-card border-t border-zinc-800 px-4 py-16">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-display font-black text-4xl text-white uppercase mb-6">
+          Key Products<span class="text-gravity">.</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {brand.data.keyProducts.map(product => (
+            <div class="border border-zinc-800 p-5 hover:border-gravity transition-colors">
+              <h3 class="font-display font-bold text-xl text-white uppercase">{product}</h3>
+              {brand.data.affiliateUrl && (
+                <a
+                  href={brand.data.affiliateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="text-gravity text-xs font-bold uppercase tracking-widest mt-3 block hover:text-white transition-colors"
+                >
+                  Shop {brand.data.name} →
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Back link -->
+  <div class="px-4 py-10 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto">
+      <a href="/brand-spotlights" class="text-gravity text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">
+        All Brand Spotlights
+      </a>
+    </div>
+  </div>
+
+</BaseLayout>

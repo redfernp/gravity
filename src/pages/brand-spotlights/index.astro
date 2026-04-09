@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BrandCard from '../../components/BrandCard.astro';
+
+const brands = await getCollection('brand-spotlights');
+const sorted = brands.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return a.data.name.localeCompare(b.data.name);
+});
+
+const dtcBrands = sorted.filter(b => b.data.pricePoint === 'dtc-value');
+const otherBrands = sorted.filter(b => b.data.pricePoint !== 'dtc-value');
+---
+
+<BaseLayout
+  title="Brand Spotlights | Gravity Snowsports"
+  description="In-depth features on the brands we ride with. Dope Snow, Montec, Burton, Arc'teryx, Patagonia and more. Their stories, their athletes, their best kit."
+>
+  <section class="relative overflow-hidden bg-gravity-bg py-24 px-4 noise-overlay">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d1020] to-gravity-bg"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <span class="section-label block mb-4">The Brands We Ride</span>
+      <h1 class="font-display font-black text-6xl md:text-8xl text-white uppercase leading-none">
+        Brand<br /><span class="text-gravity">Spotlights.</span>
+      </h1>
+      <p class="text-zinc-400 mt-4 text-lg max-w-2xl">
+        Not ads. Deep-dive features that get into the DNA of the brands shaping extreme snow sports. Their athletes, their ethos, their best products.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    {dtcBrands.length > 0 && (
+      <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="gravity-badge">Best Value DTC</span>
+          <p class="text-zinc-400 text-sm">Performance specs at a fraction of the premium price. Our highest recommendation for riders who want serious kit without the markup.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {dtcBrands.map(brand => (
+            <BrandCard
+              name={brand.data.name}
+              tagline={brand.data.tagline}
+              slug={brand.slug}
+              category={brand.data.category}
+              pricePoint={brand.data.pricePoint}
+              heroImage={brand.data.heroImage}
+              featured={brand.data.featured}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+
+    {otherBrands.length > 0 && (
+      <div>
+        <h2 class="font-display font-black text-3xl text-white uppercase mb-6">All Brand Spotlights</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {otherBrands.map(brand => (
+            <BrandCard
+              name={brand.data.name}
+              tagline={brand.data.tagline}
+              slug={brand.slug}
+              category={brand.data.category}
+              pricePoint={brand.data.pricePoint}
+              heroImage={brand.data.heroImage}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

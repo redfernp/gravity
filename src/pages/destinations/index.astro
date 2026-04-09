@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+const articles = await getCollection('destinations');
+const sorted = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<BaseLayout
+  title="Destinations | Gravity Snowsports"
+  description="Resort and backcountry destination guides. La Grave, Lyngen Alps, Hokkaido, Chamonix, Alaska. The mountains worth chasing."
+>
+  <section class="relative overflow-hidden bg-gravity-bg py-24 px-4 noise-overlay">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#081828] to-gravity-bg"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <span class="section-label block mb-4">Where to Go</span>
+      <h1 class="font-display font-black text-7xl md:text-9xl text-white uppercase leading-none">
+        DESTINATIONS<span class="text-gravity">.</span>
+      </h1>
+      <p class="text-zinc-400 mt-4 text-lg max-w-2xl">
+        The resorts and backcountry zones worth planning your season around. We skip the beginner guides and go straight to the good stuff.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    {sorted.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {sorted.map((article, i) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            slug={article.slug}
+            collection="destinations"
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+            image={article.data.image}
+            author={article.data.author}
+            featured={i === 0}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-zinc-500">Destination guides coming soon.</p>
+    )}
+  </div>
+</BaseLayout>

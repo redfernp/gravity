@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+
+const articles = await getCollection('gear-lab');
+const sorted = articles.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const featured = sorted.find(a => a.data.featured) || sorted[0];
+const rest = sorted.filter(a => a !== featured);
+
+const categories = [...new Set(sorted.map(a => a.data.category))];
+---
+
+<BaseLayout
+  title="Gear Lab | Gravity Snowsports"
+  description="Independent ski and snowboard gear reviews. Jackets, pants, splitboard kits, helmets, and the best brands tested and rated honestly."
+>
+  <section class="relative overflow-hidden bg-gravity-bg py-24 px-4 noise-overlay">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d1020] to-gravity-bg"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <span class="section-label block mb-4">Reviews and Guides</span>
+      <h1 class="font-display font-black text-7xl md:text-9xl text-white uppercase leading-none">
+        GEAR LAB<span class="text-gravity">.</span>
+      </h1>
+      <p class="text-zinc-400 mt-4 text-lg max-w-2xl">
+        We test everything. Independent reviews, honest ratings, no press-release recycling. The gear that earns its place on the mountain.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- DTC callout -->
+    <div class="bg-gravity-card border border-gravity/30 p-6 mb-12 flex flex-col md:flex-row items-start md:items-center gap-4 justify-between">
+      <div>
+        <span class="gravity-badge mb-2 block w-fit">Best Value Pick</span>
+        <p class="text-zinc-200 font-medium">
+          Looking for the best bang per pound? <strong class="text-white">Dope Snow</strong> and <strong class="text-white">Montec</strong> are our DTC value champions: performance specs that compete with brands at twice the price.
+        </p>
+      </div>
+      <div class="flex gap-3 shrink-0">
+        <a href="/brand-spotlights/dope-snow" class="btn-primary text-xs px-5 py-2 whitespace-nowrap">Dope Snow</a>
+        <a href="/brand-spotlights/montec" class="btn-outline text-xs px-5 py-2 whitespace-nowrap">Montec</a>
+      </div>
+    </div>
+
+    {featured && (
+      <div class="mb-12">
+        <ArticleCard
+          title={featured.data.title}
+          description={featured.data.description}
+          slug={featured.slug}
+          collection="gear-lab"
+          pubDate={featured.data.pubDate}
+          category={featured.data.category}
+          image={featured.data.image}
+          author={featured.data.author}
+          featured={true}
+          size="large"
+        />
+      </div>
+    )}
+
+    {rest.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {rest.map(article => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            slug={article.slug}
+            collection="gear-lab"
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+            image={article.data.image}
+            author={article.data.author}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>

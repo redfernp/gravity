@@ -1,0 +1,107 @@
+---
+const sections = [
+  {
+    label: 'Editorial',
+    links: [
+      { label: 'Compete', href: '/compete' },
+      { label: 'Shred', href: '/shred' },
+      { label: 'Destinations', href: '/destinations' },
+      { label: 'Culture', href: '/culture' },
+    ],
+  },
+  {
+    label: 'Gear',
+    links: [
+      { label: 'Gear Lab', href: '/gear-lab' },
+      { label: 'Brand Spotlights', href: '/brand-spotlights' },
+      { label: 'Jacket Reviews', href: '/gear-lab' },
+      { label: 'Splitboard Kit', href: '/gear-lab' },
+    ],
+  },
+  {
+    label: 'Compete',
+    links: [
+      { label: 'X Games', href: '/compete' },
+      { label: 'Freeride World Tour', href: '/compete' },
+      { label: 'UK Underground', href: '/compete' },
+      { label: 'BUSC Varsity', href: '/compete' },
+    ],
+  },
+];
+
+const brands = [
+  'Dope Snow', 'Montec', '686', 'Burton', 'Peak Performance',
+  'Patagonia', 'Rab', 'Vaude', 'Mammut', 'Haglofs',
+  'Picture Organic', 'Volcom', 'The North Face', "Arc'teryx", 'Helly Hansen',
+];
+---
+
+<footer class="bg-gravity-card border-t border-zinc-800 mt-20">
+
+  <!-- Brand strip -->
+  <div class="border-b border-zinc-800 py-4 overflow-hidden">
+    <div class="flex gap-8 animate-marquee whitespace-nowrap">
+      {[...brands, ...brands].map(brand => (
+        <span class="text-zinc-600 text-xs font-bold uppercase tracking-widest font-display shrink-0">
+          {brand}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <a href="/" class="inline-flex items-center gap-0.5 mb-4 group">
+          <span class="font-display font-black text-4xl text-white group-hover:text-gravity transition-colors">GRAVITY</span>
+          <span class="text-gravity text-4xl font-black">.</span>
+        </a>
+        <p class="text-zinc-500 text-sm leading-relaxed">
+          Every vertical. Every discipline. The UK's extreme snow sports media. No limits, no filler.
+        </p>
+        <p class="text-zinc-600 text-xs mt-4">gravitysnowsports.co.uk</p>
+      </div>
+
+      <!-- Nav columns -->
+      {sections.map(section => (
+        <div>
+          <h3 class="section-label mb-4">{section.label}</h3>
+          <ul class="flex flex-col gap-2">
+            {section.links.map(link => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-zinc-400 text-sm hover:text-white transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-zinc-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-zinc-600 text-xs">
+        &copy; {new Date().getFullYear()} Gravity Snowsports. All rights reserved.
+      </p>
+      <p class="text-zinc-700 text-xs max-w-xl text-center md:text-right">
+        Some links on this site are affiliate links. If you buy through them we earn a small commission at no extra cost to you. We only recommend gear we genuinely rate.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+</style>

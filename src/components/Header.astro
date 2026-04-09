@@ -1,0 +1,92 @@
+---
+const navItems = [
+  { label: 'Compete', href: '/compete' },
+  { label: 'Shred', href: '/shred' },
+  { label: 'Gear Lab', href: '/gear-lab' },
+  { label: 'Destinations', href: '/destinations' },
+  { label: 'Culture', href: '/culture' },
+  { label: 'Brand Spotlights', href: '/brand-spotlights' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-gravity-bg/80 backdrop-blur-md border-b border-zinc-800/40 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-1 group">
+        <span class="font-display font-black text-3xl text-white tracking-tight leading-none group-hover:text-gravity transition-colors duration-200">
+          GRAVITY
+        </span>
+        <span class="text-gravity text-3xl font-black leading-none">.</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class={`text-xs font-bold uppercase tracking-widest transition-colors duration-200 font-display ${
+              currentPath.startsWith(item.href)
+                ? 'text-gravity'
+                : 'text-zinc-400 hover:text-white'
+            }`}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden text-zinc-400 hover:text-white transition-colors p-2"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-gravity-bg border-t border-zinc-800">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+      {navItems.map(item => (
+        <a
+          href={item.href}
+          class={`text-sm font-bold uppercase tracking-widest py-2 font-display transition-colors duration-200 ${
+            currentPath.startsWith(item.href)
+              ? 'text-gravity'
+              : 'text-zinc-400 hover:text-white'
+          }`}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const header = document.getElementById('site-header');
+
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+
+  // Opaque on scroll
+  window.addEventListener('scroll', () => {
+    if (!header) return;
+    if (window.scrollY > 60) {
+      header.style.backgroundColor = 'rgba(8,12,20,0.97)';
+      header.style.borderBottomColor = 'rgba(39,39,42,0.8)';
+    } else {
+      header.style.backgroundColor = 'rgba(8,12,20,0.8)';
+      header.style.borderBottomColor = 'rgba(39,39,42,0.4)';
+    }
+  }, { passive: true });
+</script>

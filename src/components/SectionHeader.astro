@@ -1,0 +1,38 @@
+---
+interface Props {
+  label: string;
+  title: string;
+  description?: string;
+  cta?: { label: string; href: string };
+  align?: 'left' | 'center';
+}
+
+const {
+  label,
+  title,
+  description,
+  cta,
+  align = 'left',
+} = Astro.props;
+---
+
+<div class={`mb-10 ${align === 'center' ? 'text-center' : ''}`}>
+  <span class="section-label block mb-3">{label}</span>
+  <div class={`flex items-end ${align === 'center' ? 'justify-center' : 'justify-between'} gap-4 flex-wrap`}>
+    <h2 class="font-display font-black text-4xl md:text-5xl text-white uppercase leading-none">
+      {title}
+    </h2>
+    {cta && (
+      <a
+        href={cta.href}
+        class="text-xs font-bold uppercase tracking-widest text-gravity hover:text-white transition-colors shrink-0 mb-1"
+      >
+        {cta.label} →
+      </a>
+    )}
+  </div>
+  {description && (
+    <p class="text-zinc-400 mt-3 max-w-2xl leading-relaxed">{description}</p>
+  )}
+  <div class={`mt-4 h-px bg-gradient-to-r from-gravity via-zinc-700 to-transparent ${align === 'center' ? 'mx-auto max-w-sm' : ''}`}></div>
+</div>

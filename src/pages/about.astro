@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const team = [
+  {
+    name: 'Jake Renshaw',
+    role: 'Gear Lab Editor',
+    from: 'Leeds',
+    passion: 'Freeriding',
+    bio: `Jake grew up in Leeds, spent his teenage years lapping the dry slope at Yeadon, and had what he calls his "brain rewire moment" the first time he watched Candide Thovex's One Of Those Days. He has since spent every penny of disposable income getting to Chamonix, La Grave, and one deeply questionable trip to a side valley in Georgia that ended with a helicopter evacuation and absolutely zero regrets.
+
+Jake runs Gear Lab. He tests everything. He bought three different hard shells in one season just to compare them properly. His family think he has a problem. He thinks he is thorough.
+
+Skis wide, turns hard, does not own a single piece of green or blue kit.`,
+    tags: ['Freeriding', 'Big Mountain', 'Gear'],
+  },
+  {
+    name: 'Cara McAllister',
+    role: 'Backcountry and Touring Editor',
+    from: 'Inverness',
+    passion: 'Splitboarding',
+    bio: `Cara is from Inverness and has been riding Scottish lines since she was seventeen. She started splitboarding during a season working in Aviemore and never looked back. She now splits her time between the Cairngorms and the Lyngen Alps, where she spends two weeks every March skinning up things that make her friends back home go quiet on WhatsApp.
+
+Cara covers backcountry, touring, and splitboard content on Gravity. She also writes our destination guides for anywhere that involves earning your turns. She knows more about snow science, avalanche terrain, and skin wax than anyone else we have ever met.
+
+She agreed to run social media for the site on the condition that she never has to post a reel doing a trending sound. We respect that.`,
+    tags: ['Splitboarding', 'Ski Touring', 'Backcountry'],
+  },
+  {
+    name: 'Dom Ferreira',
+    role: 'Competition Editor',
+    from: 'Bristol',
+    passion: 'Slopestyle and Halfpipe',
+    bio: `Dom is from Bristol and has been riding park since he was twelve, starting at Chill Factore on his mum's membership. He competed in university snow sports for three years, never quite made the podium at BUSC, and decided the better use of his obsession was writing about the people who did.
+
+Dom is our competition editor. He watches every X Games live stream from start to finish, has a spreadsheet of every FWT qualifier result since 2018, and has opinions about halfpipe judging criteria that he will share at length if you give him the opportunity.
+
+He also covers the UK underground scene: the dry slope comps, the grassroots slopestyle events, the riders who are two seasons away from being on a proper team. This is his favourite part of the job.`,
+    tags: ['X Games', 'FWT', 'UK Underground', 'Park'],
+  },
+];
+---
+
+<BaseLayout
+  title="About Gravity Snowsports — We Are Gravity"
+  description="Three obsessives. One extreme snow sports site. Meet the team behind Gravity Snowsports — UK freeriders, splitboarders, and competition nerds who got tired of reading safe, glossy snow content."
+>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gravity-bg py-24 px-4 noise-overlay">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0d1828] to-gravity-bg"></div>
+    <div class="relative z-10 max-w-5xl mx-auto">
+      <span class="section-label block mb-4">The Team</span>
+      <h1 class="font-display font-black text-6xl md:text-8xl lg:text-9xl text-white uppercase leading-none mb-8">
+        We Are<br /><span class="text-gravity">Gravity.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-3xl border-l-4 border-gravity pl-6">
+        Snow is not a hobby for us. It is the thing everything else gets planned around.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="max-w-4xl mx-auto px-4 py-20">
+    <div class="prose prose-lg">
+      <p class="text-zinc-300 text-xl leading-relaxed mb-6">
+        Gravity Snowsports was built by three people who were tired of reading the same safe, glossy, beginner-friendly snow content and wondering where their version of the sport was.
+      </p>
+      <p class="text-zinc-400 leading-relaxed mb-6">
+        We wanted somewhere that talked about the Freeride World Tour like it mattered. Somewhere that actually covered what was happening on UK dry slopes and university circuits. Somewhere that reviewed gear with real opinions, not press-release recycling.
+      </p>
+      <p class="text-zinc-400 leading-relaxed">
+        So we built it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 pb-24">
+    <div class="border-t border-zinc-800 pt-12 mb-12">
+      <span class="section-label block mb-3">Behind the Site</span>
+      <h2 class="font-display font-black text-5xl text-white uppercase">The Team</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      {team.map((member, i) => (
+        <div class="bg-gravity-card border border-zinc-800 p-8 hover:border-zinc-600 transition-colors">
+          <div class="mb-6">
+            <div class="w-12 h-12 bg-gravity flex items-center justify-center mb-4">
+              <span class="font-display font-black text-2xl text-black">
+                {member.name.split(' ').map((n: string) => n[0]).join('')}
+              </span>
+            </div>
+            <h3 class="font-display font-black text-3xl text-white uppercase">{member.name}</h3>
+            <p class="text-gravity text-xs font-bold uppercase tracking-widest mt-1">{member.role}</p>
+            <p class="text-zinc-500 text-xs uppercase tracking-wider mt-1">{member.from}</p>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            {member.tags.map((tag: string) => (
+              <span class="gravity-badge-outline text-xs">{tag}</span>
+            ))}
+          </div>
+
+          <div class="space-y-4">
+            {member.bio.split('\n\n').filter((p: string) => p.trim()).map((para: string) => (
+              <p class="text-zinc-400 text-sm leading-relaxed">{para}</p>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Why Gravity -->
+  <section class="bg-gravity-card border-t border-b border-zinc-800 py-24 px-4">
+    <div class="max-w-4xl mx-auto">
+      <span class="section-label block mb-4">Why Gravity</span>
+      <h2 class="font-display font-black text-5xl md:text-6xl text-white uppercase leading-none mb-10">
+        The UK Has a Brilliant<br />Snow Sports Community.<br /><span class="text-gravity">Nobody Covers It Properly.</span>
+      </h2>
+
+      <div class="space-y-6 text-zinc-400 leading-relaxed max-w-3xl">
+        <p>
+          University clubs, dry slope regulars, people who take two weeks off work every January and chase powder across three countries. Athletes coming up through BUSC who go on to compete at World Cup level. A backcountry scene in Scotland that would surprise you.
+        </p>
+        <p>
+          None of this gets covered properly. Most UK snow media is either resort marketing dressed up as journalism or gear content that reads like a catalogue.
+        </p>
+        <p class="text-zinc-200 font-medium text-lg">
+          We are not that.
+        </p>
+        <p>
+          We cover the sport the way we experience it: obsessively, opinionatedly, with proper respect for the people actually doing it. We partner with brands we genuinely rate. We review gear honestly. We cover competitions from the grassroots up.
+        </p>
+        <p class="text-zinc-300">
+          If that sounds like your kind of snow media, you are in the right place.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"\\(Get-Content ''src/content/gear-lab/best-ski-jackets-2027.md''\\) -replace ''tags: \\\\[ski-jackets, gear-guide, dope-snow, arc-teryx, patagonia, 686, volcom, rab, mammut, buying-guide\\\\]'', ''tags: [ski-jackets, gear-guide, dope-snow, arc-teryx, patagonia, \"\"686\"\", volcom, rab, mammut, buying-guide]'' | Set-Content ''src/content/gear-lab/best-ski-jackets-2027.md''\")",
+      "Bash(npm run:*)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.freeskier.com)",
+      "WebFetch(domain:www.aspentimes.com)",
+      "WebFetch(domain:www.xgames.com)",
+      "WebSearch",
+      "WebFetch(domain:www.dopesnow.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.montecwear.com)",
+      "WebFetch(domain:comfortemp.freudenberg-pm.com)",
+      "WebFetch(domain:www.snowmagazine.com)",
+      "WebFetch(domain:www.switchbacktravel.com)",
+      "WebFetch(domain:www.outdoorgearlab.com)",
+      "WebFetch(domain:gearjunkie.com)",
+      "WebFetch(domain:www.newschoolers.com)",
+      "WebFetch(domain:www.treelinereview.com)",
+      "WebFetch(domain:mtnweekly.com)",
+      "WebFetch(domain:whitelines.com)",
+      "WebFetch(domain:backcountrymagazine.com)",
+      "WebFetch(domain:www.hellyhansen.com)",
+      "WebFetch(domain:www.thenorthface.com)",
+      "WebFetch(domain:welove2ski.com)",
+      "WebFetch(domain:www.nickskithreevalleys.co.uk)",
+      "WebFetch(domain:www.fall-line.co.uk)",
+      "WebFetch(domain:citymagazine.si)",
+      "WebFetch(domain:www.theinertia.com)",
+      "WebFetch(domain:www.boardsportsource.com)",
+      "WebFetch(domain:bettertrail.com)",
+      "WebFetch(domain:outdoorcrunch.com)"
+    ]
+  }
+}

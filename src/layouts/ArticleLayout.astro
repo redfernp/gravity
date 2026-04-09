@@ -1,0 +1,121 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    pubDate: Date;
+    category: string;
+    subcategory?: string;
+    image?: string;
+    imageAlt?: string;
+    author?: string;
+    tags?: string[];
+    readTime?: number;
+  };
+  collection?: string;
+}
+
+const { frontmatter, collection } = Astro.props;
+
+const formattedDate = frontmatter.pubDate.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${frontmatter.title} | Gravity Snowsports`}
+  description={frontmatter.description}
+  image={frontmatter.image}
+  type="article"
+>
+  <!-- Article Hero -->
+  <section class="relative">
+    {frontmatter.image ? (
+      <div class="relative h-[60vh] min-h-[400px] overflow-hidden">
+        <img
+          src={frontmatter.image}
+          alt={frontmatter.imageAlt || frontmatter.title}
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-gravity-bg via-gravity-bg/60 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-8 md:p-16 max-w-5xl mx-auto">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="gravity-badge">{frontmatter.category}</span>
+            {frontmatter.subcategory && (
+              <span class="text-zinc-400 text-xs uppercase tracking-widest">{frontmatter.subcategory}</span>
+            )}
+          </div>
+          <h1 class="font-display font-black text-white uppercase leading-none text-4xl md:text-6xl lg:text-7xl text-balance">
+            {frontmatter.title}
+          </h1>
+        </div>
+      </div>
+    ) : (
+      <div class="relative bg-gradient-to-b from-zinc-900 to-gravity-bg pt-20 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="gravity-badge">{frontmatter.category}</span>
+            {frontmatter.subcategory && (
+              <span class="text-zinc-400 text-xs uppercase tracking-widest">{frontmatter.subcategory}</span>
+            )}
+          </div>
+          <h1 class="font-display font-black text-white uppercase leading-none text-4xl md:text-6xl lg:text-7xl text-balance">
+            {frontmatter.title}
+          </h1>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <!-- Article Meta -->
+  <section class="border-b border-zinc-800 py-4 px-4">
+    <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-6 text-sm text-zinc-400">
+        <span class="font-medium text-zinc-200">{frontmatter.author || 'Gravity Team'}</span>
+        <span>{formattedDate}</span>
+        {frontmatter.readTime && <span>{frontmatter.readTime} min read</span>}
+      </div>
+      {frontmatter.tags && frontmatter.tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {frontmatter.tags.map(tag => (
+            <span class="text-xs text-zinc-500 border border-zinc-800 px-2 py-0.5 uppercase tracking-wider">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Description lead -->
+  <section class="px-4 pt-10 pb-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-medium border-l-4 border-gravity pl-6">
+        {frontmatter.description}
+      </p>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <article class="px-4 py-10">
+    <div class="max-w-4xl mx-auto prose prose-lg leading-relaxed">
+      <slot />
+    </div>
+  </article>
+
+  <!-- Back link -->
+  <section class="px-4 pb-20 border-t border-zinc-800 pt-10">
+    <div class="max-w-4xl mx-auto">
+      <a
+        href={collection ? `/${collection}` : '/'}
+        class="text-gravity text-sm font-bold uppercase tracking-widest hover:text-white transition-colors"
+      >
+        Back to {collection ? collection.replace('-', ' ') : 'Home'}
+      </a>
+    </div>
+  </section>
+</BaseLayout>
