@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   image?: string;
   type?: string;
+  transparentHeader?: boolean;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   description = 'Gravity Snowsports — Every Vertical. Every Discipline. No Limits. UK extreme snow sports, X Games, FWT, gear reviews and backcountry guides.',
   image = '/og-default.jpg',
   type = 'website',
+  transparentHeader = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -51,8 +53,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body class="bg-gravity-bg text-zinc-200 min-h-screen flex flex-col">
-    <Header />
-    <main class="flex-1 pt-16">
+    <Header transparent={transparentHeader} />
+    <main class:list={['flex-1', { 'pt-16': !transparentHeader }]}>
       <slot />
     </main>
     <Footer />

@@ -1,4 +1,10 @@
 ---
+interface Props {
+  transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+
 const navItems = [
   { label: 'Compete', href: '/compete' },
   { label: 'Shred', href: '/shred' },
@@ -9,9 +15,13 @@ const navItems = [
 ];
 
 const currentPath = Astro.url.pathname;
+
+const headerClasses = transparent
+  ? 'fixed top-0 left-0 right-0 z-50 transition-all duration-300'
+  : 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gravity-bg/80 backdrop-blur-md border-b border-zinc-800/40';
 ---
 
-<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" data-transparent>
+<header id="site-header" class={headerClasses} data-transparent={transparent ? 'true' : undefined}>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
 
@@ -80,8 +90,7 @@ const currentPath = Astro.url.pathname;
 
   btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
 
-  // Check if we're on the homepage
-  const isHome = window.location.pathname === '/';
+  const isTransparent = header?.hasAttribute('data-transparent');
 
   function updateHeader() {
     if (!header) return;
@@ -91,7 +100,7 @@ const currentPath = Astro.url.pathname;
       header.style.borderBottom = '1px solid rgba(39,39,42,0.8)';
       header.style.backdropFilter = 'blur(12px)';
       header.style.webkitBackdropFilter = 'blur(12px)';
-    } else if (isHome) {
+    } else if (isTransparent) {
       // Top of homepage — fully transparent
       header.style.backgroundColor = 'transparent';
       header.style.borderBottom = '1px solid transparent';
@@ -99,10 +108,10 @@ const currentPath = Astro.url.pathname;
       header.style.webkitBackdropFilter = 'none';
     } else {
       // Top of other pages — semi-transparent
-      header.style.backgroundColor = 'rgba(8,12,20,0.8)';
-      header.style.borderBottom = '1px solid rgba(39,39,42,0.4)';
-      header.style.backdropFilter = 'blur(12px)';
-      header.style.webkitBackdropFilter = 'blur(12px)';
+      header.style.backgroundColor = '';
+      header.style.borderBottom = '';
+      header.style.backdropFilter = '';
+      header.style.webkitBackdropFilter = '';
     }
   }
 
