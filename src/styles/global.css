@@ -36,9 +36,12 @@
 @layer components {
   .font-display {
     font-family: 'Barlow Condensed', sans-serif;
-    overflow: visible;
-    /* Barlow Condensed uppercase G has a descender — prevent clipping */
-    padding-bottom: 0.08em;
+  }
+
+  /* Barlow Condensed uppercase G has a descender that gets clipped at line-height:1.
+     Override leading-none (line-height:1) to a safe minimum everywhere. */
+  .font-display.leading-none {
+    line-height: 1.15 !important;
   }
 
   /* --- Noise grain overlay --- */

@@ -31,7 +31,12 @@
       "WebFetch(domain:www.theinertia.com)",
       "WebFetch(domain:www.boardsportsource.com)",
       "WebFetch(domain:bettertrail.com)",
-      "WebFetch(domain:outdoorcrunch.com)"
+      "WebFetch(domain:outdoorcrunch.com)",
+      "mcp__60a02310-e9cb-4be8-8b5c-9bbfbca1bbca__workers_list",
+      "mcp__60a02310-e9cb-4be8-8b5c-9bbfbca1bbca__accounts_list",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:gravitysnowsports.co.uk)",
+      "WebFetch(domain:gravity-2yj.pages.dev)"
     ]
   }
 }
