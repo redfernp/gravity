@@ -16,11 +16,13 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16">
 
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-1 group">
-        <span class="font-display font-black text-3xl text-white tracking-tight leading-none group-hover:text-gravity transition-colors duration-200">
-          GRAVITY
+      <a href="/" class="flex flex-col items-start group leading-none">
+        <span class="font-display font-black text-2xl text-white tracking-tight leading-none group-hover:text-gravity transition-colors duration-200">
+          GRAVITY<span class="text-gravity">.</span>
         </span>
-        <span class="text-gravity text-3xl font-black leading-none">.</span>
+        <span class="font-display font-bold text-[0.55rem] text-zinc-400 uppercase tracking-[0.35em] leading-none mt-0.5 group-hover:text-zinc-300 transition-colors duration-200">
+          Snowsports
+        </span>
       </a>
 
       <!-- Desktop Nav -->

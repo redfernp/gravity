@@ -48,13 +48,22 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
 >
 
   <!-- Hero -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gravity-bg noise-overlay grain-anim grid-overlay">
-    <!-- Deep atmosphere -->
-    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-gravity-bg to-gravity-bg"></div>
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gravity-bg">
+    <!-- Background image -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=1920&q=80&fit=crop&crop=center"
+        alt="Backcountry skier in deep powder with dramatic mountain backdrop"
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+    </div>
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-black/55"></div>
+    <!-- Bottom gradient fade into site bg -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gravity-bg"></div>
     <!-- Lime radial glow -->
     <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(200,255,0,0.07) 0%, transparent 65%);"></div>
-    <!-- Warm hot-spot bottom -->
-    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 40% 30% at 80% 100%, rgba(255,61,0,0.04) 0%, transparent 60%);"></div>
     <!-- Animated scan line -->
     <div class="absolute left-0 right-0 h-px bg-gravity opacity-10 pointer-events-none" style="animation: scanDown 6s linear 1.5s infinite; top: 0;"></div>
 
@@ -66,7 +75,11 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
           style="font-size: clamp(4.5rem, 22vw, 18rem); line-height: 0.9;">
         GRAVITY
       </h1>
-      <p class="hero-subtitle text-zinc-400 mt-6 mb-10 max-w-2xl mx-auto leading-relaxed"
+      <p class="font-display font-bold text-zinc-300 uppercase tracking-[0.4em] mt-2 mb-0"
+         style="font-size: clamp(0.75rem, 3vw, 1.8rem);">
+        Snowsports
+      </p>
+      <p class="hero-subtitle text-zinc-300 mt-6 mb-10 max-w-2xl mx-auto leading-relaxed"
          style="font-size: clamp(1rem, 2vw, 1.25rem);">
         Snow sports media for riders who are done with beginner guides and press-release gear reviews. Honest kit reviews, real competition coverage, and the underground scenes nobody else bothers with.
       </p>
@@ -77,8 +90,8 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
     </div>
 
     <div class="hero-scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-      <span class="text-zinc-700 text-xs uppercase tracking-widest font-display">Scroll</span>
-      <div class="w-px h-10 bg-gradient-to-b from-zinc-600 to-transparent"></div>
+      <span class="text-zinc-500 text-xs uppercase tracking-widest font-display">Scroll</span>
+      <div class="w-px h-10 bg-gradient-to-b from-zinc-400 to-transparent"></div>
     </div>
   </section>
 
