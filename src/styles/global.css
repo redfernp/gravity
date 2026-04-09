@@ -36,6 +36,7 @@
 @layer components {
   .font-display {
     font-family: 'Barlow Condensed', sans-serif;
+    overflow: visible;
   }
 
   /* --- Noise grain overlay --- */
