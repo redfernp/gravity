@@ -21,13 +21,13 @@ const headerClasses = transparent
   : 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gravity-bg/80 backdrop-blur-md border-b border-zinc-800/40';
 ---
 
-<header id="site-header" class={headerClasses} data-transparent={transparent ? 'true' : undefined}>
+<header id="site-header" class={`${headerClasses} overflow-visible`} data-transparent={transparent ? 'true' : undefined}>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center justify-between h-16 overflow-visible">
 
       <!-- Logo -->
-      <a href="/" class="flex flex-col items-start group">
-        <span class="font-display font-black text-2xl text-white tracking-tight group-hover:text-gravity transition-colors duration-200" style="line-height: 1.15;">
+      <a href="/" class="flex flex-col items-start group overflow-visible">
+        <span class="font-display font-black text-2xl text-white tracking-tight group-hover:text-gravity transition-colors duration-200 pb-[3px]" style="line-height: 1.15;">
           GRAVITY<span class="text-gravity">.</span>
         </span>
         <span class="font-display font-bold text-[0.55rem] text-zinc-400 uppercase tracking-[0.35em] group-hover:text-zinc-300 transition-colors duration-200" style="line-height: 1; margin-top: -1px;">

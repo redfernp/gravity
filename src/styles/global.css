@@ -37,6 +37,8 @@
   .font-display {
     font-family: 'Barlow Condensed', sans-serif;
     overflow: visible;
+    /* Barlow Condensed uppercase G has a descender — prevent clipping */
+    padding-bottom: 0.08em;
   }
 
   /* --- Noise grain overlay --- */
