@@ -356,3 +356,8 @@ h2.font-display {
   min-height: 0;
   overflow: visible !important;
 }
+
+/* line-clamp clips descenders on the last line — add breathing room */
+[class*="line-clamp"] {
+  padding-bottom: 2px;
+}
