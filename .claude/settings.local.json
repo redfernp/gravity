@@ -36,7 +36,8 @@
       "mcp__60a02310-e9cb-4be8-8b5c-9bbfbca1bbca__accounts_list",
       "Bash(gh repo:*)",
       "WebFetch(domain:gravitysnowsports.co.uk)",
-      "WebFetch(domain:gravity-2yj.pages.dev)"
+      "WebFetch(domain:gravity-2yj.pages.dev)",
+      "WebFetch(domain:www.fastcompany.com)"
     ]
   }
 }

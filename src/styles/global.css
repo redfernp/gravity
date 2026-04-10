@@ -250,9 +250,15 @@
   to   { transform: translateY(100vh); }
 }
 
-/* Apply hero animations */
+/* Apply hero animations — opacity only, no transform/filter to avoid compositing clip on G */
 .hero-wordmark {
-  animation: gravityIn 0.8s cubic-bezier(0.16,1,0.3,1) forwards, glitchFlicker 8s ease-in-out 3s infinite;
+  animation: heroFadeIn 0.8s ease-out both;
+  overflow: visible !important;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .hero-label {
@@ -341,11 +347,12 @@
 }
 
 /* ============================================
-   BARLOW CONDENSED G DESCENDER FIX
-   Placed outside all @layers for maximum priority.
-   Barlow Condensed Black uppercase G extends below
-   the baseline — leading-none (line-height:1) clips it.
+   BARLOW CONDENSED DESCENDER SAFETY
+   Global minimum line-height for display headings.
+   Prevents any future leading-none from clipping.
    ============================================ */
-.font-display[class*="leading-none"] {
-  line-height: 1.2 !important;
+h1.font-display,
+h2.font-display {
+  min-height: 0;
+  overflow: visible !important;
 }
