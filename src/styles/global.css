@@ -199,12 +199,12 @@
     filter: blur(12px);
   }
   60% {
-    filter: blur(0);
+    filter: none;
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scaleX(1);
-    filter: blur(0);
+    transform: none;
+    filter: none;
   }
 }
 
@@ -224,22 +224,18 @@
 @keyframes glitchFlicker {
   0%, 92%, 100% {
     opacity: 1;
-    transform: none;
     text-shadow: none;
   }
   93% {
     opacity: 0.85;
-    transform: translateX(-3px);
-    text-shadow: 3px 0 #c8ff00;
+    text-shadow: -3px 0 #c8ff00, 3px 0 #ff3d00;
   }
   94% {
     opacity: 1;
-    transform: translateX(3px);
-    text-shadow: -3px 0 #ff3d00;
+    text-shadow: 3px 0 #c8ff00, -3px 0 #ff3d00;
   }
   95% {
     opacity: 0.9;
-    transform: none;
     text-shadow: none;
   }
 }
@@ -261,7 +257,7 @@
 
 /* Apply hero animations */
 .hero-wordmark {
-  animation: gravityIn 0.8s cubic-bezier(0.16,1,0.3,1) both, glitchFlicker 8s ease-in-out 3s infinite;
+  animation: gravityIn 0.8s cubic-bezier(0.16,1,0.3,1) forwards, glitchFlicker 8s ease-in-out 3s infinite;
 }
 
 .hero-label {
