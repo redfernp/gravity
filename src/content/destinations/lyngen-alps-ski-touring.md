@@ -1,13 +1,13 @@
 ---
 title: "Lyngen Alps: Ski Touring Above the Arctic Circle"
-description: "The Lyngen Alps in northern Norway offer ski mountaineering above the Arctic Circle with fjord views, midnight sun, and terrain that rivals the Alps at a fraction of the footfall. Cara McAllister's guide."
+description: "The Lyngen Alps in northern Norway offer ski mountaineering above the Arctic Circle with fjord views, midnight sun, and terrain that rivals the Alps at a fraction of the footfall. Meg Sutherland's guide."
 pubDate: 2026-01-19
 category: Ski Touring
 image: https://plus.unsplash.com/premium_photo-1688071660341-57ad44c14992?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8bm9yd2F5JTIwZmpvcmQlMjBza2klMjB0b3VyaW5nJTIwYXJjdGljfGVufDB8fHx8MTc3NTIxMTExOHww&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Ski tourer on a Lyngen Alps ridge with fjord far below"
-author: Cara McAllister
+author: Meg Sutherland
 featured: false
-tags: [lyngen, norway, ski-touring, arctic, fjord, ski-mountaineering, destinations]
+tags: ["lyngen", "norway", "ski-touring", "arctic", "fjord", "ski-mountaineering", "destinations"]
 readTime: 10
 ---
 
@@ -17,11 +17,11 @@ I came to Lyngen for the first time three years ago on a recommendation from a g
 
 ## The Terrain
 
-The Lyngen Alps are a collection of high ridges and peaks running roughly north-south along the peninsula. The highest summit is Jiekkevarri at 1,834 metres, and the touring objectives range from straightforward glacier walks to serious ski mountaineering routes with significant vertical exposure and consequence.
+The Lyngen Alps are a collection of high ridges and peaks running roughly north-south along the peninsula. The highest summit is Jiehkkevárri at 1,833 metres (the name comes from Sami: "jiehkke" meaning glacier, "várri" meaning mountain — the highest peak in Troms county), and the touring objectives range from straightforward glacier walks to serious ski mountaineering routes with significant vertical exposure and consequence.
 
 The most distinctive feature of the terrain is the descent-to-sea-level access: many of the touring objectives in Lyngen begin and end within sight of the fjord, which means the descents drop through compressed vertical environments that combine high alpine skiing, open face skiing, and tree line terrain within a single run. A descent from the upper glacier to the fjord shore can cover 1,500 metres of vertical in terrain that transitions completely from alpine to maritime within the run.
 
-**The Lyngen Traverse** is the signature multi-day ski mountaineering objective: a three to four day traverse of the main ridge from one end of the peninsula to the other, camping or hut-staying each night. The traverse requires serious ski mountaineering competence, the ability to navigate in Arctic conditions, and the judgement to manage objective hazard across extended alpine terrain without access to rescue infrastructure. It is not a beginner objective. It is one of the most rewarding things I've done on skis.
+**The Lyngen Traverse** is the signature multi-day ski mountaineering objective: a traverse of the main range running roughly 90km north-south along the peninsula, typically requiring one to two weeks depending on conditions, route choice, and whether you're covering the full range or a section. Camping or hut-staying each night, the traverse requires serious ski mountaineering competence, the ability to navigate in Arctic conditions, and the judgement to manage objective hazard across extended alpine terrain without access to rescue infrastructure. It is not a beginner objective. It is one of the most rewarding things I've done on skis.
 
 **Single-day objectives** from the main base areas at Lyngseidet and Furuflaten include a variety of moderate touring routes that provide the essential Lyngen experience, fjord views from high snow, without the commitment of multi-day mountaineering. The Blåbærfjellet approach from Lyngseidet provides a reliable single-day tour with excellent views and manageable terrain for competent touring practitioners.
 
@@ -47,7 +47,7 @@ Lyngen does not have the extensive hut infrastructure that characterises Norwegi
 
 **The guide lodges** at Lyngseidet are the most practically oriented: designed for groups with early starts, gear-drying infrastructure, and the kind of practical mountain focus that serious touring groups need. Meals are provided, local route knowledge is baked into the hosting, and the group dynamic of sharing meals and route planning discussions with other touring parties adds something specific to the experience.
 
-**Wild camping** on the peninsula is legal and regularly practiced by the self-sufficient touring community. The right to roam principle that governs Norwegian land access applies in Lyngen, and the terrain above the tree line is freely accessible for camping. A lightweight tent system and the competence to manage cold-weather camping are requirements. The reward is the specific experience of waking inside the tent to Arctic light on the fjord below, which is not reproducible through any other method.
+**Wild camping** on the peninsula is legal and regularly practiced by the self-sufficient touring community. Norway's *allemannsretten* (right of public access) is legally enshrined and permits wild camping on uncultivated land, provided you camp at least 150 metres from the nearest inhabited building (stays beyond two nights in the same spot require landowner permission, except in mountains and remote areas). The terrain above the tree line is freely accessible. A lightweight tent system and the competence to manage cold-weather camping are requirements. The reward is the specific experience of waking inside the tent to Arctic light on the fjord below, which is not reproducible through any other method.
 
 ## The Snowpack
 

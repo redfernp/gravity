@@ -5,7 +5,7 @@ pubDate: 2025-12-02
 category: BUSC
 image: https://plus.unsplash.com/premium_photo-1664302789763-18ac463a58a7?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c2tpJTIwcmFjaW5nJTIwc2xhbG9tJTIwYWxwaW5lfGVufDB8fHx8MTc3NTIxMTEyMnww&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Ski racer carving through slalom gates in alpine competition"
-author: Dom Ferreira
+author: Callum Royce
 featured: false
 tags: [busc, varsity-trip, anglo-swiss, buds, buisc, brits, university, uk-underground, edinburgh, mayrhofen]
 readTime: 9

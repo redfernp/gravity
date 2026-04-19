@@ -5,7 +5,7 @@ pubDate: 2025-10-20
 category: Splitboard Review
 image: https://plus.unsplash.com/premium_photo-1754337730608-59a489f3c9fd?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c3BsaXRib2FyZCUyMGJhY2tjb3VudHJ5JTIwbW91bnRhaW58ZW58MHx8fHwxNzc1MjExMTI3fDA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Splitboarder skinning up a steep alpine slope with mountain panorama"
-author: Cara McAllister
+author: Meg Sutherland
 featured: false
 tags: [splitboard, backcountry, gear-guide, jones, burton, korua, spark-rd, karakoram, union, pomoca, skins, bindings, touring]
 readTime: 15

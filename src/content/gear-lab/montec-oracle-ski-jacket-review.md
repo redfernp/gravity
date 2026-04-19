@@ -5,7 +5,7 @@ pubDate: 2025-12-15
 category: Jacket Review
 image: https://www.montecwear.com/images/H3682_01_h2ewaIT.jpg
 imageAlt: "Montec Oracle Ski Jacket in Black"
-author: Jake Renshaw
+author: Tom Healey
 featured: false
 tags: [montec, oracle, jacket-review, dtc, "20k", waterproof, outerwear, shield-tec, comfortemp, bluesign]
 readTime: 10

@@ -5,7 +5,7 @@ pubDate: 2026-03-08
 category: Freeride World Tour
 image: https://plus.unsplash.com/premium_photo-1706625692466-a1d938ff8641?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c3RlZXAlMjBtb3VudGFpbiUyMHNraWluZyUyMGNsaWZmJTIwZnJlZXJpZGV8ZW58MHx8fHwxNzc1MjExMTM4fDA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Freerider dropping a steep mountain face"
-author: Dom Ferreira
+author: Callum Royce
 featured: false
 tags: [fwt, freeride-world-tour, "2026", baqueira-beret, fieberbrunn, ben-richards, toby-rafford, kristofer-turdell, alaska, verbier]
 readTime: 10

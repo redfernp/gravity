@@ -5,9 +5,9 @@ pubDate: 2026-02-24
 category: Culture
 image: https://plus.unsplash.com/premium_photo-1737582995294-589417ab5605?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c2tpJTIwcGhvdG9ncmFwaHklMjBtb3VudGFpbiUyMHdpbnRlcnxlbnwwfHx8fDE3NzUyMTExMzR8MA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Photographer framing a shot of a skier on a steep open face"
-author: Dom Ferreira
+author: Callum Royce
 featured: false
-tags: [photography, culture, freeride, film, media, ski-photography, snowboard]
+tags: ["photography", "culture", "freeride", "film", "media", "ski-photography", "snowboard"]
 readTime: 8
 ---
 
@@ -45,7 +45,7 @@ What has survived the transition is the images that work at every scale. A great
 
 The documentary film production has been the third major format in snow sports photography and media, and it's the one that has grown most dramatically in the social media era rather than being displaced by it.
 
-The dedicated ski and snowboard film, from the earliest Warren Miller productions through the TGR, Poor Boyz, and Standard Films era, to the current generation of expedition-based documentaries from production houses like Camp 4 Collective and Sherpa Cinema, has always occupied a different space from photography: longer form, narrative-structured, able to communicate context and consequence in ways that a still image cannot.
+The dedicated ski and snowboard film, from the earliest Warren Miller productions (annual films since 1950) through Teton Gravity Research (founded 1996 in Jackson Hole, now 40+ films and counting), Poor Boyz Productions, and Standard Films, to the current generation of expedition-based documentaries from production houses like Camp 4 Collective and Sherpa Cinema, has always occupied a different space from photography: longer form, narrative-structured, able to communicate context and consequence in ways that a still image cannot.
 
 The current generation of snow sports film production has benefited from the same camera technology revolution that changed photography: cinema-grade cameras in small, weather-sealed bodies that can be taken places that dedicated film units couldn't access previously, drone cinematography that provides cinematic aerial footage at a fraction of traditional helicopter costs, and global distribution through streaming platforms that doesn't require the film to be sold into a physical distribution network.
 

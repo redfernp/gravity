@@ -5,7 +5,7 @@ pubDate: 2026-01-27
 category: X Games
 image: https://images.unsplash.com/photo-1510861204575-106db3eb041b?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c25vd2JvYXJkJTIwYmlnJTIwYWlyJTIwanVtcHxlbnwwfHx8fDE3NzUyMTExMjN8MA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Snowboarder launching a massive big air at X Games Aspen"
-author: Dom Ferreira
+author: Callum Royce
 featured: true
 tags: [x-games, aspen, mia-brooks, kirsty-muir, zoe-atkin, mark-mcmorris, scotty-james, competition, "2026"]
 readTime: 10

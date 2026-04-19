@@ -5,7 +5,7 @@ pubDate: 2025-12-22
 category: Gear Guide
 image: https://plus.unsplash.com/premium_photo-1661888367057-e7de245217e5?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8ZnJlZXJpZGUlMjBza2lpbmclMjBwb3dkZXIlMjBtb3VudGFpbnxlbnwwfHx8fDE3NzUyMTExNDF8MA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Three ski jackets compared side by side on the mountain"
-author: Jake Renshaw
+author: Tom Healey
 featured: false
 tags: [dope-snow, the-north-face, helly-hansen, jacket-review, gear-guide, comparison, dtc, adept, descendit, gravity, "15k"]
 readTime: 10

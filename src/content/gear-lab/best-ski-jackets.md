@@ -5,7 +5,7 @@ pubDate: 2025-11-20
 category: Gear Guide
 image: https://plus.unsplash.com/premium_photo-1664302789763-18ac463a58a7?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c2tpJTIwcmFjaW5nJTIwc2xhbG9tJTIwYWxwaW5lfGVufDB8fHx8MTc3NTIxMTEyMnww&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Collection of ski jackets from multiple brands"
-author: Jake Renshaw
+author: Tom Healey
 featured: true
 tags: [gear-guide, ski-jackets, dope-snow, montec, "686", burton, peak-performance, patagonia, rab, vaude, mammut, haglofs, picture-organic, volcom, the-north-face, arc-teryx, helly-hansen, best-of]
 readTime: 20

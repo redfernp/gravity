@@ -5,9 +5,9 @@ pubDate: 2026-03-02
 category: Alps
 image: https://plus.unsplash.com/premium_photo-1694475499310-a1fd5333e202?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8Y2hhbW9uaXglMjBtb250JTIwYmxhbmMlMjBhbHBzJTIwc2tpaW5nfGVufDB8fHx8MTc3NTIxMTEzMXww&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Freerider dropping into a steep Chamonix off-piste face with the Mont Blanc massif behind"
-author: Jake Renshaw
+author: Tom Healey
 featured: false
-tags: [chamonix, freeride, off-piste, alps, france, vallée-blanche, grands-montets]
+tags: ["chamonix", "freeride", "off-piste", "alps", "france", "vallée-blanche", "grands-montets"]
 readTime: 9
 ---
 
@@ -21,7 +21,7 @@ Chamonix is not one ski area: it's a valley with multiple separate lift systems 
 
 **Brévent and Flégère** on the south-facing slopes above the town: connected by a cable car traverse, these areas provide south-facing resort skiing with excellent views of Mont Blanc and access to off-piste terrain in the Combe de la Pendant and the broader Brévent faces.
 
-**Les Grands Montets** above the village of Argentière, 8km from Chamonix town: the most serious resort terrain in the valley, accessing the Argentière glacier and the steep faces that make it the Chamonix area most relevant to the freeride community.
+**Les Grands Montets** above the village of Argentière, 8km from Chamonix town: the most serious resort terrain in the valley, accessing steep north-facing terrain and the Argentière glacier. The original top cable car reached 3,275m but was destroyed by fire in September 2018; a rebuilt lift (designed by Renzo Piano) is due to reopen in 2026-27. Until then, the Bochard gondola to 2,767m and connecting lifts provide access to what remains the Chamonix area most relevant to the freeride community.
 
 **Les Houches** at the western end of the valley: a lower, more family-oriented resort that provides protection in poor visibility conditions when the upper mountain areas are closed. Less relevant to the freerider brief.
 
@@ -29,7 +29,7 @@ Chamonix is not one ski area: it's a valley with multiple separate lift systems 
 
 ## Les Grands Montets
 
-Grands Montets is where the freerider's Chamonix exists. The Bochard gondola access from Argentière reaches 3,275 metres, and from the top station the skiing divides between:
+Grands Montets is where the freerider's Chamonix exists. Currently, the Bochard gondola from Lognan reaches 2,767 metres (the top cable car to 3,275m is under reconstruction after the 2018 fire). From the available lifts, the skiing divides between:
 
 **The Pointe de Vue side:** the resort's official off-piste zones accessed through gates in the marked piste system. The Pylônes and Pas de Chèvre routes provide sustained descent through mixed glacier and high-alpine terrain. These are the routes that freeriders build their off-piste knowledge on before moving to more serious objectives.
 
@@ -43,7 +43,7 @@ My advice for a first serious visit to Grands Montets: book a half-day with a UI
 
 The Vallée Blanche is the most famous ski tour in the world. That fame has produced volumes of misleading content, most of which either undersells it (describing it as suitable for intermediate skiers without mentioning the objective hazards) or oversells it (describing it as a serious mountaineering objective when the standard route is accessible to competent resort skiers with appropriate kit and guidance).
 
-The accurate description: the standard Vallée Blanche itinerary from the Aiguille du Midi is a 20km ski tour through the Mer de Glace glacier system descending 2,800 metres from the Aiguille du Midi back to Chamonix town. The ski terrain on the standard route is comparable in difficulty to an easy blue piste: the gradient is gentle and the skiing itself is not technically demanding. The challenges are the descent from the Aiguille du Midi to the glacier (a steep, narrow arête with exposure that requires careful navigation and creates the famous Vallée Blanche queues in season), the crevasse navigation that the glacier surface presents, and the navigation requirements for longer or alternative routes.
+The accurate description: the standard Vallée Blanche itinerary from the Aiguille du Midi is a 20km ski tour through the Mer de Glace glacier system descending 2,800 metres from the Aiguille du Midi back to Chamonix town. The ski terrain on the standard route is comparable in difficulty to a red piste in good conditions, though snow state and visibility can push it harder. The challenges are the descent from the Aiguille du Midi to the glacier (a steep, narrow arête with exposure that requires careful navigation and creates the famous Vallée Blanche queues in season), the crevasse navigation that the glacier surface presents, and the navigation requirements for longer or alternative routes.
 
 Going with a guide is the correct choice for a first Vallée Blanche. The route finding on the glacier is non-trivial, the crevasse hazard is real and seasonal, and the descent timing around the arête queues makes a significant difference to the experience quality.
 
@@ -53,7 +53,7 @@ Going with a guide is the correct choice for a first Vallée Blanche. The route 
 
 Chamonix is not a resort. It's a mountain town that happens to have skiing in it. The distinction matters because the culture is shaped by the full range of people who come here for the Mont Blanc massif: alpinists, ski mountaineers, trail runners, paragliders, freeriders, and the small permanent population that works in mountain guiding and has been doing so for generations.
 
-The Compagnie des Guides de Chamonix was founded in 1821 and is the oldest mountain guide organisation in the world. Walking past their office on the main street, you're walking past an institution that has been sending people into serious mountain terrain for two centuries. That depth of mountain culture colours everything about the town.
+The Compagnie des Guides de Chamonix was founded in 1821 — created after an accident on Mont Blanc killed three guides, prompting the establishment of a solidarity fund for bereaved families. It is the oldest and largest mountain guide association in the world, with 240 self-employed guides and leaders working under its banner today. Walking past their office on the main street, you're walking past an institution that has been sending people into serious mountain terrain for over two centuries. That depth of mountain culture colours everything about the town.
 
 **The social scene** at Chamonix is concentrated in a handful of bars and restaurants that attract the mountain community rather than the casual tourist trade. Bar'd Up on the main street draws the freeride crowd. Monkey Bar attracts the British contingent that has been sending a significant representative population to Chamonix every season for thirty years. The MBC (Mont Blanc Brewing Company) has the best après environment for people who are serious about the skiing and not interested in dancing on furniture.
 
@@ -67,7 +67,7 @@ The Compagnie des Guides de Chamonix was founded in 1821 and is the oldest mount
 
 ## The Logistics
 
-Chamonix is connected by the Mont Blanc Express train to Geneva, which makes it the most accessible serious Alpine destination from the UK via Eurostar or direct flight to Geneva. The train journey from Geneva to Chamonix is 80 minutes. The shuttle services from Geneva Airport to Chamonix run frequently and cheaply during ski season.
+Chamonix is roughly an hour's drive from Geneva, which makes it the most accessible serious Alpine destination from the UK via direct flight to Geneva. Shuttle and transfer services from Geneva Airport to Chamonix run frequently and affordably during ski season, taking around 60–90 minutes by road. There is also a train option — the Léman Express to Saint-Gervais-Le Fayet, then the Mont Blanc Express for the final leg into Chamonix — but that takes 2.5 to 3.5 hours including the connection, so most visitors opt for the road transfer.
 
 For a week-based trip, renting an apartment in Chamonix or Argentière gives you cooking access and the flexibility to organise your mountain days around the weather window. The accommodation booking market at Chamonix is competitive and expensive: book four to six months ahead for January and February trips if you want both location and budget.
 

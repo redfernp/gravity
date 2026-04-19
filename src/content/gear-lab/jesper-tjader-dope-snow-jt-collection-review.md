@@ -5,7 +5,7 @@ pubDate: 2025-12-08
 category: Jacket Review
 image: https://www.dopesnow.com/cdn/shop/files/jt-spartan-ski-jacket-men-red-black-dopesnow-1.jpg?v=1730299714&width=1200
 imageAlt: "Jesper Tjäder x Dope Snow JT Spartan Ski Jacket in Red/Black"
-author: Jake Renshaw
+author: Tom Healey
 featured: true
 tags: [dope-snow, jesper-tjader, jacket-review, pants-review, jt-spartan, jt-big, dtc, signature-collection, outerwear]
 readTime: 10

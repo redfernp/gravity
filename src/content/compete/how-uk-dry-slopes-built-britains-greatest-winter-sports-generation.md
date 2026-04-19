@@ -5,7 +5,7 @@ pubDate: 2026-02-10
 category: UK Underground
 image: https://plus.unsplash.com/premium_photo-1664303435784-0f8600225208?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c2tpJTIwZnJlZXN0eWxlJTIwdHJpY2slMjBqdW1wfGVufDB8fHx8MTc3NTIxMTEzMHww&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Freestyle skier performing a trick in the air"
-author: Dom Ferreira
+author: Callum Royce
 featured: true
 tags: [uk-underground, dry-slope, mia-brookes, kirsty-muir, zoe-atkin, katie-ormerod, maisie-hill, tyler-harding, gb-snowsport, chill-factore]
 readTime: 10

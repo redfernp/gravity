@@ -1,67 +1,98 @@
 ---
 name: Patagonia
-tagline: "Built for the Mountains. Built to Last. Built With a Conscience."
-description: "Patagonia is the American outdoor brand that defined environmental responsibility in the mountain sports industry, with technical ski and snowboard kit that backs up the mission."
+tagline: "Earth Is the Only Shareholder. The Gear Still Has to Perform."
+description: "The outdoor brand that gave itself to the planet — and still makes some of the best backcountry ski shells on the market."
 heroImage: https://plus.unsplash.com/premium_photo-1754337730608-59a489f3c9fd?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c3BsaXRib2FyZCUyMGJhY2tjb3VudHJ5JTIwbW91bnRhaW58ZW58MHx8fHwxNzc1MjExMTI3fDA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 category: Outerwear
 pricePoint: premium
 affiliateUrl: "#"
 affiliateNetwork: ""
 featured: false
-athleteRoster: []
-keyProducts: ["Snowdrifter Jacket", "Powder Bowl Pants", "Nano-Air Hoody", "R1 Fleece", "Descensionist Jacket"]
+athleteRoster: ["Kye Petersen", "Caroline Gleich", "Marie-France Roy", "Max Hammer", "Leah Evans"]
+keyProducts: ["SnowDrifter Jacket", "Powder Town Pants", "Nano-Air Hoody", "R1 Air Crew"]
 origin: USA
 founded: 1973
 ---
 
-Patagonia is the mountain sports brand that made environmental responsibility part of the product proposition rather than a marketing appendix. The company was founded by Yvon Chouinard in Ventura, California in 1973, and has spent the subsequent five decades building technical gear for the mountains while simultaneously arguing, loudly and consistently, that the outdoor industry has a responsibility to the environments it profits from.
+Patagonia is the outdoor brand that transferred its entire ownership to the planet — and still makes ski shells that backcountry riders genuinely want to wear. Founded on 9 May 1973 in Ventura, California by Yvon Chouinard, the company has grown from a climber's clothing sideline into a $1.5 billion revenue business with 3,000 employees operating in over 10 countries. That growth has come alongside a level of environmental commitment that no competitor in the snow sports industry has matched.
 
-That argument is not performative. Patagonia donates 1% of sales to environmental causes through its 1% for the Planet commitment, uses organic cotton and recycled materials across its product range wherever technically viable, operates the Worn Wear programme to keep gear in use rather than in landfill, and has transferred ownership of the company to a structure that ensures profits fund environmental work rather than investor returns. These are structural commitments, not campaign promises.
+## The Founder
 
-For the backcountry and freeride community specifically, Patagonia's environmental position resonates in a way it doesn't necessarily in other sports markets. People who ski in the mountains know what those mountains look like when snow is absent. The communities built around mountain sports have skin in the game of climate responsibility in a direct, experiential way that most people don't.
+Yvon Chouinard was born on 9 November 1938 in Lewiston, Maine. His family relocated to Southern California in 1947. By 1957, the teenage Chouinard was hand-forging steel pitons from a second-hand coal forge and selling them to fellow climbers for $1.50 each. Chouinard Equipment became a major force in American climbing hardware through the 1960s, with Chouinard himself making notable first ascents on El Capitan including the North America Wall (1964) and the Muir Wall (1965).
 
-## The Technical Credentials
+Around 1970, Chouinard recognised that the pitons his company manufactured were damaging the rock they were hammered into. He pivoted the entire business toward "clean climbing" alternatives — removable chocks and hexentrics that left no trace. It was an early signal of the principle that would define everything that followed: if the product harms the environment it operates in, redesign the product.
 
-Patagonia's ski-specific product range is built around the Snowdrifter and Descensionist lines, with the broader outdoor product range, particularly the Nano-Air and R1 midlayer systems, providing the layering options that sit beneath the outerwear.
+The clothing side of the business began with rugby shirts sold to climbers who needed something tougher than cotton. That sideline became Patagonia in 1973, named to evoke the remote landscapes of southern South America — a word that worked across languages and captured the brand's wilderness orientation.
 
-### Snowdrifter Jacket
+## Earth as Shareholder
 
-The Snowdrifter is Patagonia's flagship ski jacket for freeride and backcountry use. It uses Patagonia's H2No Performance Standard membrane, a proprietary waterproofing system with 28,000mm waterproof rating and 20,000g breathability. The H2No system has been developed by Patagonia's materials team over multiple product generations and performs comparably to Gore-Tex in independent testing across ski-relevant conditions.
+In September 2022, the Chouinard family did something unprecedented in corporate history: they gave Patagonia away. The company, valued at approximately $3 billion, was transferred to two entities. The Patagonia Purpose Trust received 2% of the company (all voting stock) to protect the brand's values. The Holdfast Collective, a 501(c)(4) nonprofit, received 98% (all nonvoting stock), with dividends funding environmental work.
 
-The cut is the jacket's most distinctive feature: a freeride-oriented silhouette with an extended back hem, deep underarm gussets, and a helmet-compatible hood with single-hand adjustment. The proportions are those of a jacket designed by people who ski in technical terrain regularly: the sleeve length covers the glove cuff without bunching, the chest pockets are accessible while wearing a chest harness, and the powder skirt is deep enough to be genuinely useful rather than perfunctory.
+"Earth is now our only shareholder," the company announced.
 
-At £479, the Snowdrifter sits at a price that reflects genuine technical investment. The H2No membrane is at the top of Patagonia's performance tier, the seam taping is comprehensive, and the construction quality across trim and hardware is consistently excellent. The DTC brands deliver competitive technical specification at lower prices, and the Snowdrifter's premium over them reflects both the H2No membrane quality and the environmental production standards that add cost to Patagonia's supply chain.
+The numbers since that transfer are concrete. Patagonia has given $180 million to the Holdfast Collective in the three years since restructuring. The company's total environmental donations now exceed $240 million. That's funded by actual margin on actual product sales — the environmental commitment is structurally embedded in the business model, not dependent on a marketing budget line item.
 
-### Powder Bowl Pants
+Chouinard was named one of Time magazine's 100 Most Influential People in 2023 for the ownership transfer. The company is now led by CEO Ryan Gellert, who took the role in September 2020.
 
-The companion piece to the Snowdrifter, built on the same H2No Performance Standard with a design language that reflects the Snowdrifter's freeride orientation. The Powder Bowl Pants are regular pants rather than bibs, which differentiates them from the bib-focused competition in the freeride pants market. The waist design includes a gaiter that pulls over the jacket or base layer to close out snow without the shoulder harness of a bib construction.
+## The Snow Sports Range
 
-The articulated knees and reinforced cuffs deliver what serious mountain pants require. The fit is a trim athletic cut, slightly more restrained in silhouette than Montec or 686's more relaxed snowboard-influenced alternatives.
+Patagonia's ski-specific line is built around the SnowDrifter shell and the Powder Town pants system, with the brand's layering pieces — the Nano-Air and R1 families — providing the thermal architecture underneath. The approach is backcountry-first: lightweight, breathable, and designed for people who earn their turns rather than ride chairlifts.
+
+### SnowDrifter Jacket — $449 (Men's and Women's)
+
+The SnowDrifter is Patagonia's flagship ski shell. The specs: a 3-layer H2No Performance Standard construction using 4.3-oz 50-denier 100% recycled polyester stretch plain weave. Waterproof rating is 20,000mm. Weight is 21.87oz in a men's medium. The DWR finish is PFC-free. Sizes run XS to 3XL.
+
+GearJunkie called it "stretchy, light, wind- and waterproof, packable, and steazy — the perfect backcountry companion." The breathability scores high marks thanks to the H2No membrane, a moisture-wicking soft knit backer, and pit zips. The stretch fabric allows unrestricted movement on the skin track, and the helmet-compatible hood fits snugly to keep snow out.
+
+Where the SnowDrifter shows its limitations is in sustained heavy rain and extreme cold. Reviewers note that the H2No membrane, while excellent in dry snow conditions, doesn't feel as impervious as Gore-Tex equivalents in prolonged wet weather. It's also an uninsulated shell — designed for active skiing where body heat provides the warmth, not for standing at the top of a lift queue in January.
+
+The SnowDrifter is available in both men's and women's versions.
 
 ### Nano-Air Hoody
 
-The Nano-Air is Patagonia's answer to the insulated midlayer question for active mountain sports. The FullRange insulation technology delivers warmth comparable to a lightweight down piece without down's sensitivity to moisture. In wet, variable mountain conditions where down insulation becomes ineffective when damp, the Nano-Air's synthetic insulation maintains its loft and thermal performance.
+The Nano-Air is Patagonia's answer to the insulated midlayer problem for ski touring. The FullRange synthetic insulation maintains loft when damp — critical in mountain conditions where down collapses — and the air-permeable construction breathes during high-effort skinning without the overheating that standard insulated midlayers create.
 
-The specific advantage in ski touring and active skiing is the insulation's air permeability: the Nano-Air breathes during high-effort activity, preventing the overheating that standard insulated midlayers create during skinning or sustained ski runs. It's the midlayer choice for anyone who moves between intense effort and cold exposure within the same day, which describes most serious mountain use.
+### R1 Air Crew
 
-### R1 Fleece
+The R1 family has been a Patagonia mainstay for over two decades. The Polartec Power Grid fleece construction delivers warmth-to-weight that synthetic alternatives still struggle to match, with a surface texture engineered for moisture management during activity.
 
-The R1 is a Patagonia classic that has remained in the product range for over two decades because it continues to work. The Polartec Power Grid fleece construction provides warmth-to-weight that synthetic alternatives still struggle to match, with a surface texture that pulls moisture away from the skin during activity. As an under-layer in a ski system, worn over a technical base layer and under a shell or insulated jacket, the R1 performs precisely what midlayers should perform: warmth, breathability, and moisture management without bulk.
+## The Ambassador Philosophy
 
-## The Worn Wear Programme
+Patagonia selects snow sports ambassadors based on values alignment, not podium rankings. The roster includes:
 
-Patagonia's Worn Wear initiative is the most serious repair and resale programme in the outdoor industry. The brand repairs Patagonia gear at cost, sells repaired gear through the Worn Wear online store at reduced prices, and actively encourages customers to buy used rather than new when a used piece meets their needs.
+- **Kye Petersen** — big-mountain skier who specialises in remote mountaineering-accessed descents worldwide
+- **Caroline Gleich** — ski mountaineer and environmental advocate, the first skier to become a Blue Climate and Oceans Project ambassador
+- **Marie-France Roy** — one of the most versatile riders in snowboarding, recipient of the 2015 Protect Our Winters Climate Activist Award
+- **Max Hammer** — backcountry specialist who combines athleticism with an artistic approach to remote terrain
+- **Leah Evans** — professional skier who runs Girls Do Ski camps to help women reach their potential on snow
 
-For ski outerwear specifically, this has practical implications: a Patagonia Snowdrifter purchased through the Worn Wear programme will have been inspected, repaired where necessary, and certified as meeting performance standards. That proposition is meaningful for buyers who want Patagonia's technical performance at a reduced cost. It's also a genuine environmental benefit: a jacket repaired and resold is a jacket that doesn't require new production.
+The athletes serve as environmental storytellers as much as product testers. It's a sponsorship model that reflects the brand's core position: performance in the mountains is inseparable from protecting those mountains.
 
-The programme is honest about its limitations: repair isn't always possible, and the secondhand supply doesn't meet demand for the most popular current products. But the infrastructure it represents, factories in Reno that actually repair outdoor gear rather than advising customers to buy a replacement, is a structural commitment that most brands haven't matched.
+## Worn Wear
 
-## The Case for Patagonia
+Patagonia's Worn Wear programme is the most developed repair and resale initiative in the outdoor industry. The numbers: 110 repair centres globally, approximately 30,000 garments repaired in Europe alone during 2024, with a target of 100,000 repairs per year by 2028. The brand's largest repair facility operates in Reno, Nevada.
 
-For buyers who want the intersection of genuine technical performance and a transparent environmental commitment, Patagonia is the answer. The Snowdrifter is an excellent ski jacket. The H2No membrane performs. The construction quality is at the premium tier. The price is honest for what you're getting.
+According to WRAP research cited in Worn Wear's reporting, extending a garment's lifespan by just nine months reduces its carbon footprint, water consumption, and waste production by 20–30%.
 
-The additional consideration is what your purchase supports. Patagonia's supply chain costs more because their environmental standards cost more. Their 1% of sales donation to environmental causes is funded by the margin on your jacket purchase. The Worn Wear programme exists because they've decided that a functional extended product life is worth more than the revenue from replacement purchases.
+The ReCrafted programme, launched in 2019, goes further — creating new clothing from fabric scraps of used Patagonia gear. Mobile repair teams travel to events across Europe, and fixed repair centres operate in partnership with the United Repair Centre in Amsterdam and London.
 
-These are not small decisions. They are structural commitments that make Patagonia the most ethically coherent option in the premium ski outerwear market. If that matters alongside the technical performance, and for a growing number of serious mountain users it does, Patagonia's position is clear.
+For ski outerwear, this has a direct practical benefit: a SnowDrifter purchased through Worn Wear has been inspected, repaired, and certified to perform. It's Patagonia-quality kit at a reduced price, with the environmental benefit of keeping a functional jacket out of landfill.
+
+## The Wider Environmental Record
+
+The company's environmental commitments are structural, not seasonal:
+
+- **1% for the Planet**: Patagonia has donated 1% of total sales (or 10% of profits, whichever is greater) to environmental organisations since 1986. Chouinard formalised this into the 1% for the Planet organisation in 2002.
+- **Organic cotton**: The entire cotton line transitioned to organic in 1996 — years before sustainability became a mainstream marketing angle.
+- **Black Friday 2016**: Patagonia donated its entire $10 million Black Friday revenue to environmental organisations.
+- **Corporate logos removed (2021)**: Patagonia stopped adding corporate logos to garments to extend their useful life beyond any single company's tenure.
+
+## The Honest Assessment
+
+Patagonia's premium pricing reflects genuine cost. The environmental standards, the organic and recycled materials, the Worn Wear infrastructure, the 1% donation — all of these add real expense to the supply chain. A SnowDrifter at $449 costs more than DTC alternatives like Dope Snow's Adept at £183 or Montec's Fury at a similar price point, and the spec sheet won't always justify the gap in pure technical terms.
+
+What justifies it is the total proposition: a backcountry shell built from recycled materials, backed by a lifetime repair guarantee, sold by a company that has given $240 million to environmental causes and transferred its entire ownership to the planet. For riders who care about what their money funds as much as what it buys, Patagonia's position is unmatched.
+
+The H2No membrane is not Gore-Tex. The SnowDrifter won't outperform a dedicated storm shell in the worst weather. But for backcountry touring in the conditions where most riders spend most of their days, the SnowDrifter is an excellent piece of kit from a company whose environmental credibility no competitor can touch.
 
 [Shop Patagonia](#)

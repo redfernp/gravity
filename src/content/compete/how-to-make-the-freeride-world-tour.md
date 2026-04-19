@@ -5,7 +5,7 @@ pubDate: 2025-12-15
 category: Freeride World Tour
 image: https://plus.unsplash.com/premium_photo-1661888367057-e7de245217e5?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8ZnJlZXJpZGUlMjBza2lpbmclMjBwb3dkZXIlMjBtb3VudGFpbnxlbnwwfHx8fDE3NzUyMTExNDF8MA&ixlib=rb-4.1.0&w=1200&h=600&fit=crop&q=80
 imageAlt: "Freerider dropping into a steep couloir during a qualifier event"
-author: Dom Ferreira
+author: Callum Royce
 featured: false
 tags: [fwt, freeride-world-tour, qualifier, challenger, fwt-pro, pathway, competition, freeride, how-to]
 readTime: 10
