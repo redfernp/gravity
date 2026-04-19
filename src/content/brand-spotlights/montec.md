@@ -56,7 +56,7 @@ Fall Line specifically mentioned seeing Montec on TV through Hitzig's FWT appear
 
 Montec's formula, as Fall Line observed, is consistent across the range: 20k/20k waterproof and breathable material, available in insulated or shell versions, with a choice of styles and colourways.
 
-**Oracle Jacket (£218):** New for 25/26. 2-way stretch ripstop shell, 60/40gsm Comfortemp insulation, snow skirt, power-mesh inner pockets, gusseted sleeves. We published a [full review of the Oracle](/gear-lab/montec-oracle-ski-jacket-review) on Gravity.
+**Oracle Jacket (£218):** New for 25/26. 2-way stretch ripstop shell, 60/40gsm Comfortemp insulation, snow skirt, power-mesh inner pockets, gusseted sleeves. We published a [full review of the Oracle](/gear-lab/montec-oracle-ski-jacket-review/) on Gravity.
 
 **Morpheus Jacket (£218):** New for 25/26. 2-way stretch ripstop with abrasion zonal panels reinforcing high-wear areas. Comfortemp insulation (95% recycled polyester). Snow Magazine reviewed the women's version and called it "an easy jacket to recommend."
 

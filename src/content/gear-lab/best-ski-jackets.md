@@ -76,7 +76,7 @@ At £174, the Blizzard is the cheapest jacket on this list by a meaningful margi
 
 The Oracle is the strongest DTC jacket on this list. 20k/20k matches the waterproofing and breathability ratings of jackets costing £400 to £700 from Patagonia, Helly Hansen, and The North Face. The Comfortemp insulation at 60/40gsm is a split-weight approach: heavier in the body where you need warmth, lighter in the sleeves for freedom of movement.
 
-The feature list reads like a jacket at twice the price: helmet-compatible storm hood with front and rear drawstring adjustment, elasticated snow skirt, power-mesh inner pockets for goggles, underarm vents, gusseted sleeve openings for gauntlet gloves, and a 2-way stretch ripstop shell. We published a [full review of the Oracle](/gear-lab/montec-oracle-ski-jacket-review) if you want the deep dive.
+The feature list reads like a jacket at twice the price: helmet-compatible storm hood with front and rear drawstring adjustment, elasticated snow skirt, power-mesh inner pockets for goggles, underarm vents, gusseted sleeve openings for gauntlet gloves, and a 2-way stretch ripstop shell. We published a [full review of the Oracle](/gear-lab/montec-oracle-ski-jacket-review/) if you want the deep dive.
 
 **Our pick for best overall value on this list.**
 

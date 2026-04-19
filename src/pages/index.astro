@@ -85,8 +85,8 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
         Honest gear reviews. Real competition coverage. The scenes nobody else bothers with.
       </p>
       <div class="hero-ctas flex items-center justify-center gap-4 flex-wrap">
-        <a href="/compete" class="btn-primary">Who's Winning Right Now</a>
-        <a href="/gear-lab" class="btn-outline">Find Your Next Kit</a>
+        <a href="/compete/" class="btn-primary">Who's Winning Right Now</a>
+        <a href="/gear-lab/" class="btn-outline">Find Your Next Kit</a>
       </div>
     </div>
 
@@ -135,7 +135,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
         label="Competition"
         title="Compete"
         description="X Games. Freeride World Tour. Underground UK. The races and riders that define the sport."
-        cta={{ label: 'All competition coverage', href: '/compete' }}
+        cta={{ label: 'All competition coverage', href: '/compete/' }}
       />
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {latestCompete.map((article, i) => (
@@ -168,7 +168,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
         label="Reviews"
         title="Gear Lab"
         description="Independent, opinionated kit reviews. We test it. We rate it. We tell you exactly what we think."
-        cta={{ label: 'All gear reviews', href: '/gear-lab' }}
+        cta={{ label: 'All gear reviews', href: '/gear-lab/' }}
       />
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         {latestGear.map(article => (
@@ -195,17 +195,17 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
         <h2 class="font-display font-black text-3xl md:text-4xl text-white uppercase">Your Pathway</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-on-scroll">
-        <a href="/gear-lab" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+        <a href="/gear-lab/" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
           <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">01</span>
           <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Gear Lab</h3>
           <p class="text-zinc-500 text-sm leading-relaxed">Find kit that performs. Honest reviews, DTC value picks, and the brands worth your money.</p>
         </a>
-        <a href="/compete" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+        <a href="/compete/" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
           <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">02</span>
           <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Compete</h3>
           <p class="text-zinc-500 text-sm leading-relaxed">Follow the riders. X Games. FWT. The UK underground and grassroots scenes nobody else covers.</p>
         </a>
-        <a href="/destinations" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
+        <a href="/destinations/" class="group bg-gravity-card border border-zinc-800 p-8 hover:border-gravity transition-all duration-300">
           <span class="text-gravity font-display font-black text-5xl opacity-30 group-hover:opacity-60 transition-opacity">03</span>
           <h3 class="font-display font-bold text-xl text-white uppercase mt-2 mb-3 group-hover:text-gravity transition-colors">Destinations</h3>
           <p class="text-zinc-500 text-sm leading-relaxed">Plan the trip. La Grave. Hokkaido. Lyngen. The mountains worth chasing this season.</p>
@@ -222,7 +222,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
           label="Partners"
           title="Brand Spotlights"
           description="The brands we ride with, test, and genuinely rate. From DTC value champions to technical heavyweights."
-          cta={{ label: 'All brand spotlights', href: '/brand-spotlights' }}
+          cta={{ label: 'All brand spotlights', href: '/brand-spotlights/' }}
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {fallbackBrands.map(brand => (
@@ -252,7 +252,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
             label="Disciplines"
             title="Shred"
             description="Freeriding, park, splitboarding, ski touring. Every discipline treated with the respect it deserves."
-            cta={{ label: 'All shred content', href: '/shred' }}
+            cta={{ label: 'All shred content', href: '/shred/' }}
           />
           <div class="flex flex-col gap-4">
             {latestShred.map(article => (
@@ -279,7 +279,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
             label="Beyond the Run"
             title="Culture"
             description="Film, photography, interviews, and the stories behind the sport. Plus destination guides for the mountains worth chasing."
-            cta={{ label: 'Culture and destinations', href: '/culture' }}
+            cta={{ label: 'Culture and destinations', href: '/culture/' }}
           />
           <div class="flex flex-col gap-4">
             {latestCulture.map(article => (
@@ -329,7 +329,7 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
       </form>
 
       <!-- Secondary CTA -->
-      <a href="/about" class="text-zinc-500 text-xs font-bold uppercase tracking-widest hover:text-gravity transition-colors font-display">
+      <a href="/about/" class="text-zinc-500 text-xs font-bold uppercase tracking-widest hover:text-gravity transition-colors font-display">
         Meet the Team Behind This →
       </a>
     </div>

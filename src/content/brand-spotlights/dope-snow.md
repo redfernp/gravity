@@ -50,7 +50,7 @@ This is not a theory. It is verified by the independent reviews above. Snow Maga
 
 **Jesper Tjäder** is Dope Snow's signature athlete. He is a Swedish freestyle skier, born in 1994 in Östersund, a four-time Olympian (Sochi 2014, PyeongChang 2018, Beijing 2022, Milano Cortina 2026), an Olympic bronze medallist in slopestyle (Beijing 2022), an X Games Knuckle Huck gold medallist (Aspen 2023), and the 2014 slopestyle World Cup overall winner.
 
-Tjäder was one of the first riders to partner with Dope Snow and has been directly involved in product development, working with the design team from initial sketches through to final fit and prototype testing. His signature collection, the **JT Spartan Jacket** and **JT Big Pants**, represents the most visible expression of that collaboration. We published a [full review of the JT collection](/gear-lab/jesper-tjader-dope-snow-jt-collection-review) on Gravity.
+Tjäder was one of the first riders to partner with Dope Snow and has been directly involved in product development, working with the design team from initial sketches through to final fit and prototype testing. His signature collection, the **JT Spartan Jacket** and **JT Big Pants**, represents the most visible expression of that collaboration. We published a [full review of the JT collection](/gear-lab/jesper-tjader-dope-snow-jt-collection-review/) on Gravity.
 
 ## The Product Range
 

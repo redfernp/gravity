@@ -111,7 +111,7 @@ const formattedDate = frontmatter.pubDate.toLocaleDateString('en-GB', {
   <section class="px-4 pb-20 border-t border-zinc-800 pt-10">
     <div class="max-w-4xl mx-auto">
       <a
-        href={collection ? `/${collection}` : '/'}
+        href={collection ? `/${collection}/` : '/'}
         class="text-gravity text-sm font-bold uppercase tracking-widest hover:text-white transition-colors"
       >
         Back to {collection ? collection.replace('-', ' ') : 'Home'}
