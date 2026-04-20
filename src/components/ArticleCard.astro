@@ -35,6 +35,26 @@ const formattedDate = pubDate.toLocaleDateString('en-GB', {
 });
 
 const delayClass = revealDelay > 0 ? `delay-${revealDelay}` : '';
+
+const baseWidth = featured || size === 'large' ? 1200 : size === 'small' ? 600 : 800;
+function optimizeUnsplash(src: string | undefined, width: number): string | undefined {
+  if (!src || !/(^|\.)unsplash\.com/.test(src)) return src;
+  try {
+    const u = new URL(src);
+    u.searchParams.set('w', String(width));
+    u.searchParams.set('fm', 'webp');
+    u.searchParams.set('q', '70');
+    return u.toString();
+  } catch {
+    return src;
+  }
+}
+const optimizedImage = optimizeUnsplash(image, baseWidth);
+const imageSrcset = image && /(^|\.)unsplash\.com/.test(image)
+  ? [Math.round(baseWidth / 2), baseWidth, baseWidth * 2]
+      .map(w => `${optimizeUnsplash(image, w)} ${w}w`)
+      .join(', ')
+  : undefined;
 ---
 
 <article class={`article-card group relative bg-gravity-card border border-zinc-800 overflow-hidden reveal-on-scroll ${delayClass} ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}>
@@ -43,10 +63,15 @@ const delayClass = revealDelay > 0 ? `delay-${revealDelay}` : '';
   <a href={url} class={`block overflow-hidden relative ${size === 'large' || featured ? 'aspect-[16/9]' : size === 'small' ? 'aspect-[3/2]' : 'aspect-[16/9]'}`}>
     {image ? (
       <img
-        src={image}
+        src={optimizedImage}
+        srcset={imageSrcset}
+        sizes={featured || size === 'large' ? '(min-width: 768px) 66vw, 100vw' : '(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw'}
         alt={title}
+        width={baseWidth}
+        height={Math.round(baseWidth * (size === 'small' ? 2/3 : 9/16))}
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         loading="lazy"
+        decoding="async"
       />
     ) : (
       <div class="w-full h-full relative overflow-hidden" style="background: linear-gradient(135deg, #141a22 0%, #080c14 100%);">

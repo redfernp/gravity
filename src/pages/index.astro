@@ -40,12 +40,20 @@ const latestCulture = [
   .slice(0, 3);
 
 const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
+
+const heroImageBase = 'https://images.unsplash.com/photo-1605540436563-5bca919ae766';
+const heroImageParams = 'fm=webp&q=70&fit=crop&crop=center';
+const heroImageSrc = `${heroImageBase}?w=1200&${heroImageParams}`;
+const heroImageSrcset = [600, 900, 1200, 1600, 1920]
+  .map(w => `${heroImageBase}?w=${w}&${heroImageParams} ${w}w`)
+  .join(', ');
 ---
 
 <BaseLayout
   title="Gravity Snowsports — Every Vertical. Every Discipline. No Limits."
   description="UK extreme snow sports media. X Games, Freeride World Tour, underground UK scenes, splitboarding, ski touring, and the best gear reviews. No filler."
   transparentHeader={true}
+  preloadImage={heroImageSrc}
 >
 
   <!-- Hero -->
@@ -53,10 +61,14 @@ const heroArticle = allCompete.find(a => a.data.featured) || allCompete[0];
     <!-- Background image -->
     <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=1920&q=80&fit=crop&crop=center"
+        src={heroImageSrc}
+        srcset={heroImageSrcset}
+        sizes="100vw"
         alt="Backcountry skier in deep powder with dramatic mountain backdrop"
         class="w-full h-full object-cover"
         loading="eager"
+        fetchpriority="high"
+        decoding="async"
       />
     </div>
     <!-- Dark overlay for text readability -->

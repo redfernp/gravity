@@ -9,6 +9,7 @@ interface Props {
   image?: string;
   type?: string;
   transparentHeader?: boolean;
+  preloadImage?: string;
 }
 
 const {
@@ -17,6 +18,7 @@ const {
   image = '/og-default.jpg',
   type = 'website',
   transparentHeader = false,
+  preloadImage,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -48,9 +50,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(image, Astro.site)} />
 
-    <!-- Preconnect to Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Syne:wght@400;500;600;700&display=swap"
+    />
+
+    {preloadImage && (
+      <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />
+    )}
   </head>
   <body class="bg-gravity-bg text-zinc-200 min-h-screen flex flex-col">
     <Header transparent={transparentHeader} />
