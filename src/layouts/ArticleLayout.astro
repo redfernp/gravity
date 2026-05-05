@@ -100,6 +100,24 @@ const formattedDate = frontmatter.pubDate.toLocaleDateString('en-GB', {
     </div>
   </section>
 
+  {collection === 'gear-lab' && frontmatter.image && (
+    <section class="px-4 pt-6 pb-2">
+      <figure class="max-w-4xl mx-auto">
+        <img
+          src={frontmatter.image}
+          alt={frontmatter.imageAlt || frontmatter.title}
+          class="w-full h-auto object-contain bg-zinc-900"
+          loading="lazy"
+        />
+        {frontmatter.imageAlt && (
+          <figcaption class="text-xs text-zinc-500 mt-2 uppercase tracking-widest">
+            {frontmatter.imageAlt}
+          </figcaption>
+        )}
+      </figure>
+    </section>
+  )}
+
   <!-- Article Body -->
   <article class="px-4 py-10">
     <div class="max-w-4xl mx-auto prose prose-lg leading-relaxed">
