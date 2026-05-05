@@ -3,7 +3,7 @@ title: "Jesper Tjäder x Dope Snow JT Collection Review: The Spartan Jacket and 
 description: "Olympic bronze medallist and X Games gold winner Jesper Tjäder's signature Dope Snow collection for 2025/26: the JT Spartan Jacket (£183) and JT Big Pants (£157). We break down the specs, the design, and whether this collab delivers on the DTC promise."
 pubDate: 2025-12-08
 category: Jacket Review
-image: https://www.dopesnow.com/images/H3843_01_2enHGX1.jpg?w=1000
+image: https://www.dopesnow.com/images/wordpress-4582242/uploads/2025/12/jesper-tjaders-new-signature-collection-is-here-dope-mag.jpg?w=1000
 imageAlt: "Jesper Tjäder x Dope Snow JT Spartan Ski Jacket in Red/Black"
 author: Tom Healey
 featured: true
